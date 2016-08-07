@@ -1,0 +1,149 @@
+@import "../base/font";
+@import "../base/px2rem";
+@import "../helpers/variables";
+
+
+/*操作按钮样式1原来样式================================*/
+.wui_switch1{
+  position:relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: px2rem(102);
+  height: px2rem(52);
+  margin-left:px2rem(10);
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: px2rem(25);
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.wui_switch1:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: px2rem(100);
+  height: px2rem(50);
+  border-radius: px2rem(25);
+  background-color: #FDFDFD;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.wui_switch1:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: px2rem(50);
+  height: px2rem(50);
+  border-radius: px2rem(25);
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.wui_switch1:checked {
+  border-color: #ff0033;
+  background-color: #ff0033;
+}
+
+.wui_switch1:checked:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.wui_switch1:checked:after {
+  -webkit-transform: translateX(px2rem(50));
+  transform: translateX(px2rem(50));
+}
+
+/*修改后新按钮样式====================================*/
+.wui_switch{
+  width: px2rem(110);
+  height: px2rem(60);
+  position:relative;
+  margin-left:px2rem(25);
+}
+.wui_switch_toggle{
+  display:none;
+}
+
+.wui_switch_label{
+  span{
+    margin-top:px2rem(2);
+  }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: px2rem(110);
+  height: px2rem(60);
+  line-height:px2rem(60);
+  border-radius: px2rem(32);
+  padding:0 px2rem(9);
+  position:absolute;
+  color:#FF0033;
+  background:#fdfdfd;
+  right:0;
+  top:0;
+  @include px2px(20);
+  border: 1px solid #f29c9c;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.wui_switch_label:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left:0;
+  width: px2rem(110);
+  height: px2rem(60);
+  border-radius: px2rem(32);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.wui_switch_label:after{
+  content: " ";
+  position: absolute;
+  top: px2rem(-1);
+  left: px2rem(-1.5);
+  width: px2rem(58);
+  height: px2rem(58);
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border:1px solid #f29c9c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.wui_switch_toggle:checked + .wui_switch_label:before {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.wui_switch_toggle:checked + .wui_switch_label:after {
+  -webkit-transform: translateX(px2rem(69));
+  transform: translateX(px2rem(69));
+}
+.wui_switch.disabled{
+  .wui_switch_label{
+    color:#999;
+    border:1px solid #f2f2f2;
+  }
+  .wui_switch_label:after{
+    content: " ";
+    border:1px solid #f2f2f2;
+  }
+}
+
+
+
+
+

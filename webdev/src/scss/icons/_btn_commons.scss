@@ -1,0 +1,211 @@
+
+@import "../base/px2rem";
+
+.btn_clickable{
+  display: block;
+  height: 100%;
+}
+/*order_start==============================*/
+
+.btn_confirm,.btn_goto_order,
+.btn_order_next,.btn_order,
+.btn_order_pay,.btn_order_done{
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100% ;
+  width:px2rem(200);
+  height: px2rem(100);
+  bottom:0;
+  right:0;
+}
+
+.order_arrive_btn_rc ,
+.order_score_btn_rc {
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100% ;
+  width:px2rem(200);
+  height: px2rem(100);
+  bottom:0;
+  right:0;
+
+}
+
+// 送达
+.order_arrive_btn_rc {
+  background-image: url(../img/btn_commons/order_arrive_btn_rc.png);
+}
+// 评价
+.order_score_btn_rc {
+  background-image: url(../img/btn_commons/order_score_btn_rc.png);
+}
+
+
+
+
+
+.btn_confirm{
+  background-image: url(../img/btn_commons/btn_confirm.png);
+}
+.btn_goto_order{
+  background-image: url(../img/btn_commons/btn_goto_order.png);
+}
+
+.btn_order_next{
+  background-image:url(../img/btn_commons/btn_order_next.png);
+}
+.btn_order{
+  background-image:url(../img/btn_commons/btn_order.png);
+}
+
+.btn_order_pay{
+  background-image:url(../img/btn_commons/btn_order_pay.png);
+}
+.btn_order_done{
+  background-image:url(../img/btn_commons/btn_order_done.png);
+}
+/*页面底部左侧返回上一层按钮*/
+.btn_back,.btn_back_top {
+  position:absolute;
+  left:0;
+  bottom:0;
+  height: px2rem(80);
+  width: px2rem(80);
+  background-position:center;
+  background-image: url(../img/btn_commons/btn_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn_back_top {
+  background-size: 60%;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACBUlEQVR4Xu3bz1HCUBDH8d2hAUvACtQKlA60AscSPGTf1RtDLtiBdqBWIB2IFagd6BUOz4mDMwwDJPD+7G8TciYk309eEsIDpo4v3PF+OgAcRoARgfF4fDSbzR6Y+ZKIJkR0KyLT0N03cQpU8fP5/JWITpeCpyJy1nqADfF/3SISfACD3yD0CGxbf1s8EX2JSD90+7AA2+K99z/MfNHaa0Cu+Gr0wI2AnPFwALnjoQA04mEAtOIhADTj1QG041UBEOLVAFDiVQCQ4rMDoMVnBUCMzwaAGp8FADk+OUDN8zx576+cc8+hz/Qh6yd7GqyLJ6IbEXkM2fkY6yYBsBKf5BSwFB8dwFp8VACL8dEArMZHAxiNRk+LGZt1F2aIq/2mO0bwXWA4HPZ7vd7Hhg1Ax0cZAWVZVtNVb50FqMLLsqwmK88tIgSfAlX0YuZ2wswn1hCiAFhGiAZgFSEqgEWE6ADWEJIAWEJIBmAFISmABYTkAE0QmHlQFEX1YSr7kgWgAcI3EQ1i/ORlV8FsAKgIWQEQEbIDoCGoACAhqAGgIKgCICCoA2gjQABoIsAAaCFAAWggwAHkRoAEyIkAC1CH4L3/dM4d7/rws/p6aIA6hNb/Zeb/aK2bd/Devzvnlv9EtddggB8BKwj3zHxNRC9EdBfj+wMzAHsd3gYrHQAaILX6JZ0fAb9IRgZfHG936AAAAABJRU5ErkJggg==);
+}
+
+
+
+
+
+.icon_bottom{
+  position:absolute;
+  width:px2rem(120);
+  height:px2rem(100);
+  left:0;
+  top:0;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/btn_commons/btn_area_list.png);
+}
+
+
+
+/*按钮选中、未选中样式=========================*/
+
+.btn_list_select_normal,
+.btn_list_select_selected,
+.btn_list_select_disabled{
+  display:inline-block;
+  width:px2rem(48);
+  height:px2rem(48);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn_list_select_normal{
+  background-image:url(../img/btn_commons/btn_list_select_normal.png);
+}
+//.btn_list_select_selected{
+//  background-image:url(../img/btn_commons/btn_list_select_selected.png);
+//}
+.wui_cell.active{
+  .btn_list_select_normal{
+    background-image:url(../img/btn_commons/btn_list_select_selected.png);
+  }
+  .ct_text{
+    color:#ff0033;
+  }
+}
+.wui_cell.disabled{
+  .btn_list_select_normal{
+    background-image:url(../img/btn_commons/btn_list_select_disabled.png);
+  }
+  .ct_text{
+    color:#aaa;
+  }
+}
+
+/*order_dish_info加减操作按钮样式===========================*/
+.btn_list_minus_normal,
+.icon_dish_minus ,
+.icon_dish_add{
+  display:inline-block;
+  width:px2rem(60);
+  height:px2rem(60);
+  vertical-align: middle;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn_list_minus_normal{
+  background-image:url(../img/btn_commons/btn_list_minus_normal.png);
+}
+.icon_dish_minus {
+  background-image:url(../img/btn_commons/btn_list_minus_special.png);
+}
+.icon_dish_add {
+  background-image:url(../img/btn_commons/btn_list_plus_normal.png);
+}
+
+
+/*购物车加减按钮======================*/
+.icon_cart_minus,.icon_cart_add{
+  display:inline-block;
+  width:px2rem(60);
+  height:px2rem(60);
+  vertical-align: middle;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_cart_minus{
+  background-image:url(../img/btn_commons/btn_list_minus_normal.png);
+}
+.icon_cart_add{
+  background-image:url(../img/btn_commons/btn_list_plus_normal.png);
+}
+.icon_cart_add.disabled{
+  background-image:url(../img/btn_commons/btn_list_plus_disabled.png);
+}
+
+
+/*member_profile=========================*/
+.btn_female,.btn_male{
+  position: absolute;
+  width: px2rem(80);
+  height:px2rem(40);
+  top:50%;
+  margin-top: px2rem(-19);
+  right: px2rem(10);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn_male {
+  background-image: url(../img/btn_commons/btn_male.png);
+}
+.btn_female {
+  background-image: url(../img/btn_commons/btn_female.png);
+}
+
+
+
+
+
+
+

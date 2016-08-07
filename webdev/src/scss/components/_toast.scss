@@ -1,0 +1,252 @@
+@import "../base/px2rem";
+@import "../base/font";
+
+
+.wui_toast{
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,.4);
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:101;
+}
+.wui_toast_body{
+
+  -webkit-transform:translateZ(0);
+  -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-backface-visibility: hidden;
+}
+
+.wui_bounce{
+  width:px2rem(450);
+  height:px2rem(200);
+  margin:0 auto;
+  background:#FFF;
+  position:absolute;
+  top:55%;
+  left:50%;
+  margin:px2rem(-200) 0 0 px2rem(-230);
+  //z-index:102;
+  border-radius:px2rem(16);
+}
+
+
+
+
+//隐藏竖直滚动条
+.bounce_center::-webkit-scrollbar{
+  width:0;
+  height:0;
+}
+.wui_toast_content{
+  width:100%;
+  height:100%;
+  background: rgba(40, 40, 40, 0.75);
+  border-radius:px2rem(16);
+  position:relative;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  -webkit-box-orient: vertical;
+}
+//隐藏竖直滚动条
+.wui_toast_content::-webkit-scrollbar{
+  width:0;
+  height:0;
+}
+.wui_toast_text{
+  text-align: center;
+  line-height:1.2;
+  margin:px2rem(60) px2rem(50) px2rem(30);
+  color:#fff;
+}
+
+.wui-fading-circle {
+  width: px2rem(50);
+  height: px2rem(50);
+  position: relative;
+  left:45%;
+  top:16%;
+}
+.wui-fading-circle .wui-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wui-fading-circle .wui-circle:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #fff000;
+  border-radius: 100%;
+  -webkit-animation: wui-circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: wui-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.wui-fading-circle .wui-circle2 {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg); }
+.wui-fading-circle .wui-circle3 {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg); }
+.wui-fading-circle .wui-circle4 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+.wui-fading-circle .wui-circle5 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg); }
+.wui-fading-circle .wui-circle6 {
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg); }
+.wui-fading-circle .wui-circle7 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+.wui-fading-circle .wui-circle8 {
+  -webkit-transform: rotate(210deg);
+  transform: rotate(210deg); }
+.wui-fading-circle .wui-circle9 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg); }
+.wui-fading-circle .wui-circle10 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg); }
+.wui-fading-circle .wui-circle11 {
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg); }
+.wui-fading-circle .wui-circle12 {
+  -webkit-transform: rotate(330deg);
+  transform: rotate(330deg); }
+.wui-fading-circle .wui-circle2:before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s; }
+.wui-fading-circle .wui-circle3:before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
+.wui-fading-circle .wui-circle4:before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+.wui-fading-circle .wui-circle5:before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s; }
+.wui-fading-circle .wui-circle6:before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s; }
+.wui-fading-circle .wui-circle7:before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s; }
+.wui-fading-circle .wui-circle8:before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+.wui-fading-circle .wui-circle9:before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s; }
+.wui-fading-circle .wui-circle10:before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s; }
+.wui-fading-circle .wui-circle11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s; }
+.wui-fading-circle .wui-circle12:before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s; }
+
+@-webkit-keyframes wui-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes wui-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+
+
+//中心弹出效果样式
+@-webkit-keyframes bounce_center_in{
+  0%{
+    opacity:0;
+    -webkit-transform:scale(0);
+    transform:scale(0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1)
+  }
+}
+.bounce_center_in{
+  -webkit-animation-name:bounce_center_in;
+  animation-name:bounce_center_in
+}
+//中心关闭效果样式
+@-webkit-keyframes bounce_center_out{
+  0%{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1)
+  }
+  100%{
+    opacity:0;
+    -webkit-transform:scale(0);
+    transform:scale(0)
+  }
+}
+.bounce_center_out{
+  -webkit-animation-name:bounce_center_out;
+  animation-name:bounce_center_out
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

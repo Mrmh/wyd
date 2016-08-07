@@ -1,0 +1,132 @@
+@import "../base/px2rem";
+@import "../helpers/variables";
+@import "../base/font";
+
+.wui_cells{
+  width:100%;
+  height:auto;
+  display:block;
+  overflow: hidden;
+  position:relative;
+}
+.wui_cell{
+  padding: 0 px2rem(30) 0 px2rem(40);
+  position: relative;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  border-bottom: 1px solid $border_gray;
+}
+//cell标题样式
+.wui_cell_title{
+  line-height:px2rem(80);
+  padding:0;
+  text-align: center;
+  background:transparent;
+  border:0;
+}
+.wui_title{
+  padding:0 px2rem(80);
+  background:#f2f2f2;
+  position: relative;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid $border_gray;
+}
+/*==========================================================*/
+//cell_ct统一样式
+
+/*一行显示*/
+.ct_text{
+  //float: left;
+  display: inline-block;
+  //padding: .93867rem 0 .91733rem;
+  margin-left: px2rem(30);
+}
+.ct_120{
+  padding:px2rem(43.5) 0;
+}
+.ct_90{
+  //padding:px2rem(28.5) 0;
+  line-height:px2rem(90);
+}
+
+
+/*两行显示*/
+.ct_text_rows {
+  padding:px2rem(23.5) 0 px2rem(23.5) px2rem(30);
+  line-height:1.2;
+}
+.upper_title{
+  display: block;
+}
+
+/*=============================================================*/
+
+//cell_rt统一样式
+
+
+
+/*=============================================================*/
+
+
+.wui_cell_ct{
+  position:relative;
+}
+.wui_cell_primary{
+   -webkit-box-flex: 1;
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+ }
+
+
+//.wui_cell_main_title{
+//  text-align: center;
+//  border-bottom: 1px solid rgba(0,0,0,.2);
+//  padding:px2rem(23) px2rem(50);
+//}
+//.wui_cell_main_title{
+//  line-height:34px;
+//}
+.wui_cells_title {
+  padding: 0  px2rem(40);
+  background-color: #f2f2f2;
+  @include px2px(28);
+  color: #666;
+  border-bottom: 1px solid $border_gray;
+  line-height:px2rem(60);
+}
+
+.page_main_title{
+  padding:px2rem(0);
+  line-height: px2rem(80);
+  text-align: center;
+  border-bottom: 1px solid $border_gray;
+}
+
+.singleRow{
+  line-height:px2rem(90);
+}
+
+.single_row{
+  line-height:px2rem(90);
+}
+
+
+.double_row{
+  padding: .49067rem 0 .49067rem .64rem;
+}

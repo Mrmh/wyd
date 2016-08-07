@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"><meta content="telephone=yes" name=format-detection><title>订餐</title><link rel=stylesheet href=../../js/plugins/swipe/swiper.css><link rel=stylesheet href=../../css/main.css><link rel=stylesheet href=../../css/pages/order/order_start.css><script src=../../js/common/hotcss.js></script><script type=text/javascript>
+        var assets = "../..";
+    </script></head><body><div class=wui_container><div class=wui_header></div><div class=wui_content><div class="banner new_user"></div><div class="wui_cells no_border_bottom" data-newuser=false data-store=1 data-opentime=11:00 data-closetime=01:00 data-operatedate><div class="wui_cell order_location"><div class=wui_cell_lt><i class=icon_step_1></i> <i class=icon_location></i></div><div class="wui_cell_ct wui_cell_primary"><span class="order_text order_location_detail" data-addressid=1 data-addresslang=113.351673 data-addresslat=23.149684><p class=order_location_detail_inner><span class=location_street>送餐地址</span> <span class=location_door></span></p></span></div><div class=wui_cell_rt><i class=icon_arrow_right></i></div></div><div class=wui_cell><div class=wui_cell_lt><i class=icon_step_2></i> <i class=icon_time></i></div><div class="wui_cell_ct wui_cell_primary"><p class="order_text dish_time"><span class=dish_time_text>用餐时间</span></p></div><div class=wui_cell_rt><i class="icon_arrow_right dish_time_rotate"></i></div></div><div class=wei_cell><div class="wui_cell_ct wui_cell_primary"><div class="order_introduces font_28"><span class=order_intro>送餐时间提早至11:00am,覆盖午市,下午茶,晚市,宵夜,且有更多新品满足您。</span><div class=service_contact><span>客服热线:</span> <a href=tel:400-8756-313 class='“contact_number"'>400-8756-313</a></div></div></div></div></div><div type=button class=newMap style="padding:40px 20px;background-color: #ccc;">点我显示地图</div></div><div class=wui_footer><div class=wui_footer_lt><i class="icons icon_logo_wyd"></i></div><div class=wui_footer_rt><i class="icons icon_btn_confirm"></i></div></div><div class=maps><div class=btn_closeMap style=z-index:2;></div><div class=swiper-container><div class=swiper-wrapper><div class=swiper-slide><img src=../../img/pics/ShangHai_1.jpg class=main-img></div><div class=swiper-slide><img src=../../img/pics/TianHeBei.jpg class=main-img></div><div class=swiper-slide><img src=../../img/pics/BeiJing_1.jpg class=main-img></div><div class=swiper-slide><img src=../../img/pics/HuaDu.jpg class=main-img></div><div class=swiper-slide><img src=../../img/pics/PanYu.jpg class=main-img></div></div><div class=swiper-pagination></div></div></div></div><div class=wui_sheet><div class="wui_sheet_body bounce_full bounce_bottom_in"><div class=wui_sheet_content><div class=store_maps id=ctrl_store_maps><div class=btn_closeMap style=z-index:10;></div><div class="swiper-container swiper-container-horizontal"><div class=swiper-wrapper id=ctrl_maps_content style="transition-duration: 0ms;"><div class=swiper-slide><img data-src=http://7xs4xd.com2.z0.glb.qiniucdn.com/TianHeBei_1.jpg class=swiper-lazy><div class=swiper-lazy-preloader></div></div><div class=swiper-slide><img data-src=http://7xs4xd.com2.z0.glb.qiniucdn.com/PanYu_1.jpg class=swiper-lazy><div class=swiper-lazy-preloader></div></div><div class=swiper-slide><img data-src=http://7xs4xd.com2.z0.glb.qiniucdn.com/HuaDu_1.jpg class=swiper-lazy><div class=swiper-lazy-preloader></div></div></div></div><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div></div></div><script src=../../js/plugins/swipe/swiper.js></script><script src=../../js/require.config.debug.js></script><script data-main=../../js/pages/order/order_start src=../../js/require.js></script><script>
+    var DATA = {};
+    window.onload = function(){
+        new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop:true,
+            lazyLoading : true,
+            updateOnImagesReady : true
+        });
+
+        var newMap = document.querySelector(".newMap");
+        var maps = document.querySelector(".maps");
+        var closeBtn = document.querySelector(".btn_closeMap");
+        newMap.onclick = function(){
+            maps.classList.add('showMap');
+        }
+        closeBtn.onclick = function(){
+            maps.classList.remove('showMap');
+        }
+    }
+</script></body></html>

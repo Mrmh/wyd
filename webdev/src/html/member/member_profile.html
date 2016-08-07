@@ -1,0 +1,161 @@
+<!--会员美食档案-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的美味档案</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/member/member_profile.css">
+    <script src="../../js/common/hotcss.js"></script>
+    <script type="text/javascript">
+        var assets = "../..";
+    </script>
+</head>
+<body>
+<div class="wui_container">
+    <div class="wui_content">
+        <p class="page_main_title">我的美味档案</p>
+        <div class="wui_cells">
+            <div class="profile_container">
+                <div class="profile_background_header">
+                    <div class="background_header_left"></div>
+                    <div class="background_header_center"></div>
+                    <div class="background_header_right"></div>
+                </div>
+                <div class="profile_infos">
+                    <div class="wui_cells">
+                        <div class="wui_cell">
+                            <dic class="wui_cell_lt">
+                                <span class="icon_profile_name"></span>
+                            </dic>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <input class=" profile_view_input"  type="text" placeholder="姓名" >
+                            </div>
+                            <div class="wui_cell_rt">
+                                <span class="btn_male"></span>
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <div class="wui_cell_lt">
+                                <span class="icon_profile_phone"></span>
+                            </div>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <input id="profile_phone" class=" profile_view_input" type="text" pattern="[0-9]*" placeholder="手机">
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <div class="wui_cell_lt">
+                                <span class="icon_profile_job"></span>
+                            </div>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <input class="   profile_view_input"  type="text" placeholder="职业">
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <dic class="wui_cell_lt">
+                                <span class="icon_profile_name"></span>
+                            </dic>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <select name="" id="" class="ct_text ct_input_90 sex_select">
+                                    <option value="0">性别选择</option>
+                                    <option value="1">男</option>
+                                    <option value="2">女</option>
+                                </select>
+                            </div>
+                            <div class="wui_cell_rt">
+                                <span class="icon_arrow_right"></span>
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <div class="wui_cell_lt">
+                                <span class="icon_profile_birthday"></span>
+                            </div>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <!--<span class="profile_text">2016/02/23</span>-->
+                                <input type="date" value="2016-03-04" class="ct_text ct_input_90  date_select"/>
+                            </div>
+                            <div class="wui_cell_rt">
+                                <span class="icon_arrow_right"></span>
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <div class="wui_cell_lt">
+                                <span class="icon_profile_fav_dishes"></span>
+                            </div>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <span class="ct_text ct_90">最喜欢的菜式</span>
+                            </div>
+                            <div class="wui_cell_rt">
+                                <span class="icon_arrow_right"></span>
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <div class="wui_cell_lt">
+                                <span class="icon_profile_fav_sweets"></span>
+                            </div>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <span class="ct_text ct_90">最喜欢的甜品</span>
+                            </div>
+                            <div class="wui_cell_rt">
+                                <span class="icon_arrow_right"></span>
+                            </div>
+                        </div>
+                        <div class="wui_cell">
+                            <div class="wui_cell_lt">
+                                <span class="icon_profile_fav_drinks"></span>
+                            </div>
+                            <div class="wui_cell_ct wui_cell_primary">
+                                <span class="ct_text ct_90">最喜欢的饮品</span>
+                            </div>
+                            <div class="wui_cell_rt">
+                                <span class="icon_arrow_right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile_infos_tail"></div>
+            </div>
+            <div class="wui_cell wui_tips">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <span class="score_tips score_tips_100"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wui_footer">
+        <div class="wui_footer_lt">
+            <i class="btn_back">
+                <a href="member_points.html" class="icon_clickable"></a>
+            </i>
+        </div>
+        <div class="wui_right_rt ">
+            <i class="btn_confirm">
+                <a href="member_index.html" class="icon_clickable"></a>
+            </i>
+        </div>
+    </div>
+
+    <div id="dialog_payments" class="wui_sheet">
+        <div class="wui_sheet_body">
+            <div class="wui_sheet_header"></div>
+            <div class="wui_sheet_content">
+                <div class="wui_cells select_contents">
+                    <div class="wui_cell">
+                        <div class="wui_cell_lt">
+                            <i class="btn_list_select_normal"></i>
+                        </div>
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <div class="ct_text ct_90">
+                                <p class="left_title">微信支付</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../../js/require.config.debug.js"></script>
+<script data-main="../../js/pages/member/member_profile" src="../../js/require.js"></script>
+
+</body>
+</html>

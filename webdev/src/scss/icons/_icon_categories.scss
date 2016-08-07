@@ -1,0 +1,281 @@
+@import "../base/px2rem";
+
+
+/*产品列表banner图=========================*/
+.product_banner{
+  width:100%;
+  z-index:100;
+  top:0;
+  height:px2rem(150);
+  background:url(../img/data_images/product_list_banner.jpg) no-repeat center;
+  background-size:cover;
+}
+//左侧列表图标==========================================
+//.icon_category_yh,.btn_calss_discount_selected,
+//.icon_category_shl,.btn_calss_roast_selected,
+//.icon_category_hx,.btn_calss_seafood_selected,
+//.icon_category_dus,.btn_calss_personal_selected,
+//.icon_category_td,.btn_calss_dessert_selected,
+//.icon_category_jsh,.btn_calss_drink_selected{
+//  display:block;
+//  width:px2rem(150);
+//  height:px2rem(100);
+//  background: no-repeat center ;
+//  background-size: cover;
+//}
+//.icon_category_yh{
+//  background-image:url(../img/icon_categories/btn_calss_discount_normal.png);
+//}
+//.icon_category_shl{
+//  background-image:url(../img/icon_categories/btn_calss_roast_normal.png);
+//}
+//.icon_category_hx{
+//  background-image:url(../img/icon_categories/btn_calss_seafood_normal.png);
+//}
+//.icon_category_dus{
+//  background-image:url(../img/icon_categories/btn_calss_personal_normal.png);
+//}
+//.icon_category_td{
+//  background-image:url(../img/icon_categories/btn_calss_dessert_normal.png);
+//}
+//.icon_category_jsh{
+//  background-image:url(../img/icon_categories/btn_calss_drink_normal.png);
+//}
+////选中状态===================
+//
+//.menu_list_item.active{
+//  .icon_category_yh{
+//    background-image: url(../img/icon_categories/btn_calss_discount_selected.png);
+//  }
+//  .icon_category_shl {
+//    background-image: url(../img/icon_categories/btn_calss_roast_selected.png);
+//  }
+//  .icon_category_hx {
+//    background-image: url(../img/icon_categories/btn_calss_seafood_selected.png);
+//  }
+//  .icon_category_dus{
+//    background-image: url(../img/icon_categories/btn_calss_personal_selected.png);
+//  }
+//  .icon_category_td {
+//    background-image: url(../img/icon_categories/btn_calss_dessert_selected.png);
+//  }
+//  .icon_category_jsh{
+//    background-image: url(../img/icon_categories/btn_calss_drink_selected.png);
+//  }
+//  .menu_item_text{
+//    color:#333;
+//  }
+//}
+//
+///*
+//    图标说明:
+//    统一前缀: icon_cate_
+//                          激活态                 未激活态
+//    hx:海鲜       => icon_cate_hx_actived  icon_cate_hx_deactived
+//    dcxx:大厨小鲜 => icon_cate_dcxx_actived  icon_cate_dcxx_deactived
+//    dus:独食      => icon_cate_dus_actived  icon_cate_dus_deactived
+//    td:甜点       => icon_cate_td_actived  icon_cate_td_deactived
+//    shl:烧腊      => icon_cate_shl_actived  icon_cate_shl_deactived
+//    xp:新品       => icon_cate_xp_actived  icon_cate_xp_deactived
+//    jsh:酒水      => icon_cate_jsh_actived  icon_cate_jsh_deactived
+//    qc:青菜       => icon_cate_qc_actived  icon_cate_qc_deactived
+//    zsh:主食      => icon_cate_zsh_actived  icon_cate_zsh_deactived
+//    rl:日料       => icon_cate_rl_actived  icon_cate_rl_deactived
+//*/
+//.icon_cate_hx ,
+//.icon_cate_dcxx,
+//.icon_cate_dus ,
+//.icon_cate_td ,
+//.icon_cate_shl,
+//.icon_cate_xp ,
+//.icon_cate_jsh,
+//.icon_cate_qc ,
+//.icon_cate_zsh,
+//.icon_cate_rl{
+//  display:block;
+//  width:px2rem(150);
+//  height:px2rem(100);
+//  background-size: cover;
+//  background: no-repeat center   ;
+//}
+//
+//
+///**************图标未选中状态***************/
+///*海鲜*/
+//.icon_cate_hx {
+//  background-image: url(../img/icon_categories/icon_cate_hx_deactived.png);
+//}
+///*大厨小鲜*/
+//.icon_cate_dcxx {
+//  background-image: url(../img/icon_categories/icon_cate_dcxx_deactived.png);
+//}
+///*独食*/
+//.icon_cate_dus {
+//  background-image: url(../img/icon_categories/icon_cate_dus_deactived.png);
+//}
+///*甜点*/
+//.icon_cate_td {
+//  background-image: url(../img/icon_categories/icon_cate_td_deactived.png);
+//}
+///*烧腊*/
+//.icon_cate_shl {
+//  background-image: url(../img/icon_categories/icon_cate_shl_deactived.png);
+//}
+///*新品*/
+//.icon_cate_xp {
+//  background-image: url(../img/icon_categories/icon_cate_xp_deactived.png);
+//}
+///*酒水*/
+//.icon_cate_jsh {
+//  background-image: url(../img/icon_categories/icon_cate_jsh_deactived.png);
+//}
+///*青菜*/
+//.icon_cate_qc {
+//  background-image: url(../img/icon_categories/icon_cate_qc_deactived.png);
+//}
+///*主食*/
+//.icon_cate_zsh {
+//  background-image: url(../img/icon_categories/icon_cate_zsh_deactived.png);
+//}
+///*日料*/
+//.icon_cate_rl {
+//  background-image: url(../img/icon_categories/icon_cate_rl_deactived.png);
+//}
+//
+//
+//  /**************图标选中状态***************/
+//.menu_list_item.active{
+//  /*海鲜*/
+//  .icon_cate_hx {
+//    background-image: url(../img/icon_categories/icon_cate_hx_actived.png);
+//  }
+//  /*大厨小鲜*/
+//  .icon_cate_dcxx {
+//    background-image: url(../img/icon_categories/icon_cate_dcxx_actived.png);
+//  }
+//  /*独食*/
+//  .icon_cate_dus {
+//    background-image: url(../img/icon_categories/icon_cate_dus_actived.png);
+//  }
+//  /*甜点*/
+//  .icon_cate_td {
+//    background-image: url(../img/icon_categories/icon_cate_td_actived.png);
+//  }
+//  /*烧腊*/
+//  .icon_cate_shl {
+//    background-image: url(../img/icon_categories/icon_cate_shl_actived.png);
+//  }
+//  /*新品*/
+//  .icon_cate_xp {
+//    background-image: url(../img/icon_categories/icon_cate_xp_actived.png);
+//  }
+//  /*酒水*/
+//  .icon_cate_jsh {
+//    background-image: url(../img/icon_categories/icon_cate_jsh_actived.png);
+//  }
+//  /*青菜*/
+//  .icon_cate_qc {
+//    background-image: url(../img/icon_categories/icon_cate_qc_actived.png);
+//  }
+//  /*主食*/
+//  .icon_cate_zsh {
+//    background-image: url(../img/icon_categories/icon_cate_zsh_actived.png);
+//  }
+//  /*日料*/
+//  .icon_cate_rl {
+//    background-image: url(../img/icon_categories/icon_cate_rl_actived.png);
+//  }
+//  .menu_item_text{
+//    color:#333;
+//  }
+//}
+
+
+
+
+.categories{
+  display:block;
+  width:px2rem(150);
+  height:px2rem(100);
+  //background-position:center;
+  //background-repeat: no-repeat;
+  //background-size:px2rem(300);
+  //background-image:url(../img/icon_categories/icon_categories.png);
+}
+.icon_categories{
+  display:block;
+  width:px2rem(150);
+  height:px2rem(100);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:px2rem(300);
+  background-image:url(../img/icon_categories/icon_categories.png);
+}
+.icon_cate_mlhx{
+  background-position:px2rem(-150) px2rem(-25);
+}
+.icon_cate_dcxx{
+  background-position:px2rem(-150) px2rem(-175);
+}
+.icon_cate_td{
+  background-position:px2rem(-150) px2rem(-325);
+}
+.icon_cate_jsh{
+  background-position:px2rem(-150) px2rem(-475);
+}
+.icon_cate_qc{
+  background-position:px2rem(-150) px2rem(-625);
+}
+.icon_cate_rl{
+  background-position:px2rem(-150) px2rem(-775);
+}
+.icon_cate_shl{
+  background-position:px2rem(-150) px2rem(-925);
+}
+.icon_cate_zsh{
+  background-position:px2rem(-150) px2rem(-1075);
+}
+
+.menu_list_item.active{
+
+  .icon_cate_mlhx{
+    background-position:0 px2rem(-25);
+  }
+  .icon_cate_dcxx{
+    background-position:0 px2rem(-175);
+  }
+  .icon_cate_td{
+    background-position:0 px2rem(-325);
+  }
+  .icon_cate_jsh{
+    background-position:0 px2rem(-475);
+  }
+  .icon_cate_qc{
+    background-position:0 px2rem(-625);
+  }
+  .icon_cate_rl{
+    background-position:0 px2rem(-775);
+  }
+  .icon_cate_shl{
+    background-position:0 px2rem(-925);
+  }
+  .icon_cate_zsh{
+    background-position:0 px2rem(-1075);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

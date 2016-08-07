@@ -1,0 +1,51 @@
+
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+@import "../../base/font";
+
+.wui_container{
+  position: static;
+}
+
+.wui_content{
+  padding-bottom: 0;
+}
+.wui_cells {
+  position: static;
+}
+.wui_cell {
+  padding: px2rem(15) px2rem(50);
+  border-bottom: 1px solid $border_gray;
+}
+.wui_cell_rt {
+  display: flex;
+}
+
+.service_rate_text{
+  @include px2px(34);
+  margin-right: px2rem(15);
+  float: right;
+}
+.table_view_line .right_choice{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.userInfo_message{
+  padding: px2rem(50);
+}
+
+
+.message_content{
+  width: 100%;
+  margin-top: px2rem(40);
+  height: px2rem(200);
+  outline: none;
+  border: none;
+}
+.wui_tips{
+  border:0;
+  margin-top:px2rem(300);
+  .wui_cell_ct{
+    text-align: center;
+  }
+}

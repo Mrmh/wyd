@@ -1,0 +1,133 @@
+@import "../base/px2rem";
+@import "../base/font";
+
+/*
+ * 添加次日时间提示
+ * <li id="hour_13">
+ *  <span class="nextDay">次日</span>13时
+ *</li>
+ */
+.timeTips {
+  @include px2px(24);
+  position: absolute;
+  left: 50%;
+  top:50%;
+  width:50px;
+  transform: translate(-120%,-46%);
+
+}
+
+
+.dialog_box {
+  position: relative;
+  width: 100%;
+  z-index:105;
+  background: #f2f2f2;
+  -webkit-mask: -webkit-gradient(linear,0% 66%,0% 100%,from(rgba(242,242,242,1)),to(rgba(0,0,0,0.3)));
+}
+.ts_datetime {
+  overflow:hidden;
+  height:px2rem(300);
+  -webkit-mask: -webkit-gradient(linear,0% 0%,0% 66%,from(rgba(0,0,0,0.3)),to(rgba(242,242,242,1)));
+}
+
+.horizon_lines_top,.horizon_lines_bottom {
+  position:absolute;
+  width:100%;
+  height:px2rem(6);
+  z-index:105;
+  box-sizing: border-box;
+  padding:0 px2rem(24);
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.horizon_lines_top {
+  top:33.33%;
+}
+
+.horizon_line {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background:#666;
+}
+.horize_line_middle {
+  margin-left: px2rem(24);
+}
+.horizon_lines_bottom {
+  top:66.66%;
+}
+
+
+@media screen and (min-width:800px){
+  .timeTips {
+    width:80px;
+  }
+}
+
+.ts_day,.ts_hour,.ts_min {
+  float:left;
+  width:50%;
+  height:100%;
+  z-index:110;
+  opacity: 1;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.ts_day {
+  float: none;
+  width: 100%;
+
+}
+
+.ts_datetime li {
+  position:relative;
+  list-style:none;
+  box-sizing:border-box;
+  margin:0 px2rem(50);
+  height:px2rem(100);
+  line-height:px2rem(100);
+  @include px2px(34);
+  color:#333;
+  display:list-item;
+  text-align:center;
+}
+.ts_datetime .ts_gray {
+  color:#999;
+}
+.current_month,.current_date,.busytime {
+  position:absolute;
+  @include px2px(20);
+}
+.current_month {
+  bottom:-5%;
+  left:35%;
+}
+.current_date {
+  bottom:-15%;
+  right:0;
+}
+.busytime {
+  bottom:-15%;
+  right:0;
+  color:#f2a07c;
+}
+
+/*
+ * 给选择日期 定制私有样式
+ */
+.horizon_line.ts_day_line {
+  width: px2rem(260);
+  position: absolute;
+  height: px2rem(6);
+  left: 50%;
+  transform: translateX(-50%);
+}

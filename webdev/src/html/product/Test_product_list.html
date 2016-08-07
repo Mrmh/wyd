@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="telephone=yes" name="format-detection">
+    <title>菜品</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/product/product_list.css">
+    <link href='http://api.youziku.com/webfont/CSS/5730342ef629d80624071980' rel='stylesheet' type='text/css' />
+    <script src="../../js/common/hotcss.js"></script>
+    <script type="text/javascript">
+        var assets = "../..";
+    </script>
+</head>
+<body>
+<div class="wui_container">
+    <div class="wui_header"></div>
+
+    <div class="wui_content products_bottom">
+        <div class="product_banner">
+            <i class="btn_ad_close"></i>
+        </div>
+        <div class="product_list">
+            <div class="menu_list">
+                <div class="menu_list_item active">
+                    <div class="menu_item_icon">
+                        <i class="icon_categories icon_cate_zsh"></i>
+                    </div>
+                    <p class="menu_item_text">主食</p>
+                </div>
+                <div class="menu_list_item">
+                    <div class="menu_item_icon">
+                        <i class="icon_categories icon_cate_shl"></i>
+                    </div>
+                    <p class="menu_item_text">烧腊</p>
+                </div>
+                <div class="menu_list_item">
+                    <div class="menu_item_icon">
+                        <i class="icon_categories icon_cate_mlhx"></i>
+                    </div>
+                    <p class="menu_item_text">海鲜</p>
+                </div>
+                <div class="menu_list_item">
+                    <div class="menu_item_icon">
+                        <i class="icon_categories icon_cate_qc"></i>
+                    </div>
+                    <p class="menu_item_text">青菜</p>
+                </div>
+                <div class="menu_list_item">
+                    <div class="menu_item_icon">
+                        <i class="icon_categories icon_cate_td"></i>
+                    </div>
+                    <p class="menu_item_text">甜点</p>
+                </div>
+                <div class="menu_list_item">
+                    <div class="menu_item_icon">
+                        <i class="icon_categories icon_cate_jsh"></i>
+                    </div>
+                    <p class="menu_item_text">酒水</p>
+                </div>
+            </div>
+            <div class="current_classify"></div>
+            <ul class="products">
+                <div class="product_classify">
+                    <span class="classify_name">优惠</span>
+                    <div class="discount_info">
+                        <i class="icon_list_discount"></i>
+                        <span class="discount_text">0元抢购，欢迎品尝：该系列菜品一律0元，每单可享一份优惠</span>
+                    </div>
+                </div>
+                <li class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"  src="../../img/pics/loading.gif"  data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/shl.jpeg"  />
+                        <div class="discount_wrapper show_background_img">
+                            <div class="discount_intro discount_mask">
+                                <div class="discount_old_price">
+                                    <span class="price_text">原</span>
+                                    <span class="price_num" id="dish_original_price"><span class="symble">¥</span>230</span>
+                                </div>
+                                <div class="discount_current_price">
+                                    <span class="price_text">现仅</span>
+                                    <span class="price_num num_bigger" id="dish_discount_price"><span class="symble">¥</span>150</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">啪啪皮皮虾(大)</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"  src="../../img/pics/loading.gif"  data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/shl.jpeg"  />
+                        <div class="discount_wrapper no_discount">
+                            <div class="discount_intro ">
+                                <div class="discount_current_price">
+                                    <span class="price_num num_bigger" id="discount_price"><span class="symble">¥</span>150</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy" src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"  src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy" alt="" src="../../img/pics/loading.gif"  data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg" />
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="product_classify">
+                    <span class="classify_name">烧腊</span>
+                </div>
+                <li id="product_12" class="product_info" data-price="5800">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"  src="../../img/pics/loading.gif"  data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg" />
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">啪啪皮皮虾(大)</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li id="product_3" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy" alt="" src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"  />
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="product_classify">
+                    <span class="classify_name">海鲜</span>
+                </div>
+                <li id="product_1" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy" src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li id="product_4" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy" src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="product_classify">
+                    <span class="classify_name">独食</span>
+                </div>
+                <li id="product_5" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"   src="../../img/pics/loading.gif"  data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg" />
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li id="product_6" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"  src="../../img/pics/loading.gif"data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="product_classify">
+                    <span class="classify_name">甜品</span>
+                </div>
+                <li id="product_7" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"  src="../../img/pics/loading.gif" data-original="http://7xp8t1.com2.z0.glb.qiniucdn.com/yssls.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li id="product_8" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"   src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg" />
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="product_classify">
+                    <span class="classify_name">酒水</span>
+                </div>
+                <li id="product_9" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"   src="../../img/pics/loading.gif" data-original="http://7xp8t1.com2.z0.glb.qiniucdn.com/ddhl.jpg" />
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li id="product_10" data-price="5800" class="product_info">
+                    <div class="product_message" href="pages/details_dishes.html">
+                        <img class="lazy"   src="../../img/pics/loading.gif" data-original ="http://7xp8t1.com2.z0.glb.qiniucdn.com/cjys.jpg"/>
+                    </div>
+                    <div class="wui_cell product_price color_yellow clear">
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <span class="product_name">特级御膳</span>
+                        </div>
+                        <div class="wui_cell_rt">
+                            <i class="icon_arrow_right"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wui_footer">
+        <div class="wui_footer_lt">
+            <i class="icon_logo_wyd"></i>
+        </div>
+        <div class="wui_footer_rt">
+            <i class="btn_goto_order"></i>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/require.config.debug.js"></script>
+<script data-main="../../js/components/productView" src="../../js/require.js"></script>
+
+</body>
+</html>

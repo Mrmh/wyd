@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订餐信息</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/order/order_dish_info.css">
+    <script src="../../js/common/hotcss.js"></script>
+    <script type="text/javascript">
+        var assets = "../..";
+    </script>
+</head>
+<body>
+<div class="wui_container">
+    <div class="wui_header"></div>
+    <div class="wui_content">
+        <div class="banner address_2"></div>
+        <div class="wui_cells">
+            <div class="wui_cell" id="bounce_perpay">
+                <div class="wui_cell_lt">
+                    <i class="icon_info_list"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="ct_text ct_120">订餐</p>
+                </div>
+                <div class="wui_cell_rt cell_rt_bd clear">
+                    <div class="left cell_rt_text color_red">已选<span class="dishCount">5</span>份菜品</div>
+                    <i class="icon_arrow_right right"></i>
+                </div>
+            </div>
+            <div class="wui_cell">
+                <div class="wui_cell_lt">
+                    <i class="icon_info_peoplenumber"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text_rows">
+                        <p class="upper_title">用餐人数</p>
+                        <p class="side_title color_999 font_28">配备相应的餐具</p>
+                    </div>
+                </div>
+                <div class="wui_cell_rt wui_count">
+                    <div class="right spinner">
+                        <i class="spinner_minus icon_dish_minus" id="people_sub"></i>
+                        <span class="spinner_count font_34" id="people_count">3</span>
+                        <i class="spinner_add icon_dish_add" id="people_add"></i>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="wui_cell">-->
+                <!--<div class="wui_cell_lt">-->
+                    <!--<i class="icon_info_tableware"></i>-->
+                <!--</div>-->
+                <!--<div class="wui_cell_ct wui_cell_primary">-->
+                    <!--<div class="ct_text_rows">-->
+                        <!--<p class="upper_title">餐具</p>-->
+                        <!--<p class="side_title color_999 font_28">感谢支持环保！</p>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="wui_cell_rt cell_rt_bd clear">-->
+                    <!--<div class="left cell_rt_text color_red">-<span class="money">10</span></div>-->
+                    <!--&lt;!&ndash;<input class="wui_switch right" type="checkbox">&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="wui_cell">
+                <div class="wui_cell_lt">
+                    <i class="icon_info_prefer"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="ct_text ct_120">口味</p>
+                </div>
+                <div class="wui_cell_rt cell_rt_bd clear">
+                    <div class="cell_rt_text left color_red">-<span class="money">10</span></div>
+                    <div class="wui_switch right" id="need_spice_checked">
+                        <input id="need_spice" class="wui_switch_toggle" type="checkbox">
+                        <label for="need_spice" class="wui_switch_label">
+                            <span class="left">微辣</span>
+                            <span class="right">正常</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="wui_cell">
+                <div class="wui_cell_lt">
+                    <i class="icon_info_server"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="ct_text ct_120">进门服务</p>
+                </div>
+                <div class="wui_cell_rt cell_rt_bd clear">
+                    <div class="cell_rt_text left color_red">-<span class="money">10</span></div>
+                    <div class="wui_switch disabled right" id="indoor_service_checkbox">
+                        <input id="indoor_service" class="wui_switch_toggle" type="checkbox" checked="checked">
+                        <label for="indoor_service" class="wui_switch_label">
+                            <span class="left">需要</span>
+                            <span class="right">不用</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="wui_cell" id="bounce_discount">
+                <div class="wui_cell_lt">
+                    <i class="icon_info_discount"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="ct_text ct_120">优惠减免</p>
+                </div>
+                <div class="wui_cell_rt">
+                    <i class="icon_arrow_right"></i>
+                </div>
+            </div>
+            <div class="wui_cell" id="bounce_payments">
+                <div class="wui_cell_lt">
+                    <i class="icon_info_pay"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="ct_text ct_120">支付方式</p>
+
+                </div>
+                <div class="wui_cell_rt cell_rt_bd clear">
+                    <div class="cell_rt_text left">微信支付</div>
+                    <i class="icon_arrow_right right"></i>
+                </div>
+            </div>
+            <div class="wui_cell dishInfo_message">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="ct_text ct_120 color_red font_28">地址超出送餐范围!需支付额外的交通费用，具体金额请以我们的特工单据做准。</p>
+                </div>
+            </div>
+        </div>
+        <!--测试弹出层================================-->
+        <!--首单超600测试=============================-->
+        <!--<input type="button" value="超600" class="dialog_firstorder">-->
+        <!--&lt;!&ndash;今日告罄（不足起送价）======================&ndash;&gt;-->
+        <!--<input type="button" value="今日告罄(不足)" class="dialog_sell_out1">-->
+        <!--&lt;!&ndash;今日告罄（达到起送价）======================&ndash;&gt;-->
+        <!--<input type="button" value="今日告罄(达到)" class="dialog_sell_out2">-->
+    </div>
+    <div class="wui_footer">
+        <div class="wui_footer_lt">
+            <i class="btn_back">
+                <a href="order_user_info.html"></a>
+            </i>
+        </div>
+        <div class="wui_footer_ct footer_ct_bd clear">
+            <span class="innerText">需付</span>
+            <span class="money color_red">680</span>
+        </div>
+        <div class="wui_footer_rt">
+            <i class="btn_order_pay"></i>
+        </div>
+    </div>
+
+    <!--&lt;!&ndash;中心弹出售罄==============================&ndash;&gt;-->
+    <!--<div class="wui_dialog">-->
+        <!--<div class="wui_dialog_body bounce_center">-->
+            <!--<div class="wui_dialog_image"></div>-->
+            <!--<div class="wui_dialog_header">-->
+                <!--<div class="wui_dialog_title_center">今日告罄</div>-->
+            <!--</div>-->
+            <!--<div class="wui_dialog_content">-->
+                <!--<div class="wui_cells">-->
+                    <!--<div class="wui_cell">-->
+                        <!--<div class="wui_cell_ct wui_cell_primary">-->
+                            <!--<p class="ct_text ct_90">逼格龙虾</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="wui_dialog_footer">-->
+                <!--<div class="wui_dialog_button_center">确认</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+    <!--&lt;!&ndash;底部弹出菜品列表框==============================&ndash;&gt;-->
+    <!--<div id="dialogBottom" class="wui_sheet">-->
+        <!--<div class="wui_sheet_body">-->
+            <!--<div class="wui_sheet_header"></div>-->
+            <!--<div class="wui_sheet_content">-->
+                <!--<div class="wui_cells cart_contents">-->
+                    <!--<div class="wui_cell">-->
+                        <!--<div class="wui_cell_ct wui_cell_primary">-->
+                            <!--<p class="ct_text ct_90">逼格龙虾</p>-->
+                        <!--</div>-->
+                        <!--<div class="wui_cell_rt cell_rt_bd clear">-->
+                            <!--<i class="icon_list_discount left"></i>-->
+                            <!--<span class="cart_product_price left">¥10</span>-->
+                            <!--<span class="productCount right">1份</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;底部弹出优惠方式框==============================&ndash;&gt;-->
+    <!--<div id="dialog_discount" class="wui_sheet">-->
+        <!--<div class="wui_sheet_body">-->
+            <!--<div class="wui_sheet_header"></div>-->
+            <!--<div class="wui_sheet_content">-->
+                <!--<div class="wui_cells select_contents" data-amount="2000">-->
+                    <!--<div class="wui_cell">-->
+                        <!--<div class="wui_cell_lt">-->
+                            <!--<i class="btn_list_select_normal"></i>-->
+                        <!--</div>-->
+                        <!--<div class="wui_cell_ct wui_cell_primary">-->
+                            <!--<div class="ct_text_rows">-->
+                                <!--<p class="upper_title">猫眼石优惠</p>-->
+                                <!--<p class="side_title font_28">本次可使用200个猫眼石</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="wui_cell_rt">-->
+                            <!--<div class="ct_text ct_90">-<span class="money">20</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;底部弹出支付方式框==============================&ndash;&gt;-->
+    <!--<div id="dialog_payments" class="wui_sheet">-->
+        <!--<div class="wui_sheet_body">-->
+            <!--<div class="wui_sheet_header"></div>-->
+            <!--<div class="wui_sheet_content">-->
+                <!--<div class="wui_cells select_contents">-->
+                    <!--<div class="wui_cell">-->
+                        <!--<div class="wui_cell_lt">-->
+                            <!--<i class="btn_list_select_normal"></i>-->
+                        <!--</div>-->
+                        <!--<div class="wui_cell_ct wui_cell_primary">-->
+                            <!--<div class="ct_text ct_90">微信支付</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<script src="../../js/require.config.debug.js"></script>
+<script data-main="../../js/pages/order/order_dish_info" src="../../js/require.js"></script>
+
+</body>
+</html>

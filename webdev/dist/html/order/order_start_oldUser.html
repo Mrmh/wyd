@@ -1,0 +1,67 @@
+<html><head><meta charset=utf-8><meta content="telephone=yes" name=format-detection><title>订餐</title><link rel=stylesheet href=../../js/plugins/swipe/swiper.css><link rel=stylesheet href=../../css/main.css><link rel=stylesheet href=../../css/pages/order/order_start.css><script src=../../js/common/hotcss.js></script><script type=text/javascript>
+        var assets = "../..";
+    </script></head><body><div class=wui_container><div class=wui_header></div><div class=wui_content><div class="banner old_user"></div><div class=wui_cells><div class="wui_cell order_location"><div class="wui_cell_lt cell_lt_bd clear"><i class=icon_step_1></i> <i class=icon_location></i></div><div class="wui_cell_ct wui_cell_primary"><div class=ct_text_rows><p class=upper_title id=ctrl_detail_address>广州市天河区龙怡路银汇大厦</p><p class="side_title color_999" id=ctrl_cityname>1803室</p></div></div><div class=wui_cell_rt><i class=icon_arrow_right></i></div></div><div class="wui_cell order_appointdate"><div class="wui_cell_lt cell_lt_bd clear"><i class=icon_step_2></i> <i class=icon_time></i></div><div class="wui_cell_ct wui_cell_primary"><p class="order_text dish_time"><span class=dish_time_text>用餐日期</span></p></div><div class="wui_cell_rt cell_rt_bd clear"><span id=ctrl_appoint_date class="cell_rt_text left"></span> <i class="icon_arrow_right right"></i></div></div><div class="wui_cell wui_cell_info"><div class="wui_cell_ct wui_cell_primary"><div class=order_introduces><span class=order_text>喵～ 欢迎您又回来吃海鲜啦, [晚1点北京] 欢迎您～</span> <span class=order_info>北京下单 :</span> <span class=order_info>请戳<i class=hand_point></i><a href=###>[北京人民请戳这里] !</a></span> <span class=order_info>其它城市下单 :</span> <span class=order_info>请戳<i class=hand_point></i><a href=###>[其它城市] 点餐时光机 ;</a></span> <span class=order_info>或戳<i class=hand_point></i><a href=tel:400-8756-313>[客服热线: 400-8756-313] 帮你下单 !</a></span></div></div></div><button class=btn>测试弹出层</button></div></div><div class=wui_footer><div class=wui_footer_lt><i class=icon_logo_wyd></i></div><div class=wui_footer_rt><i class=btn_confirm></i></div></div><div id=dialog_location_new class=wui_sheet><div class=wui_sheet_body><div class=wui_sheet_content><div class=wui_title><div class=wui_cell_lt><i class=btn_back_top></i></div><div class="wui_cell_ct wui_cell_primary"><p class=wui_cell_title>请输入新地址</p></div></div><div class=wui_cells><div class=wui_cell><div class=wui_cell_lt>所在城市</div><div class="wui_cell_ct wui_cell_primary"><select id=city_list class="ct_text ct_input_90 city"><option class=select_items value=广州市>广州市</option><option class=select_items value=北京市>北京市</option><option class=select_items value=上海市>上海市</option><option class=select_items value=深圳市>深圳市</option></select></div><div class=wui_cell_rt><i class=icon_arrow_right></i></div></div><div class=wui_cell><div class=wui_cell_lt>所在地区</div><div class="wui_cell_ct wui_cell_primary"><input readonly type=text id=searchId class="ct_text ct_input_90 city" placeholder=关键字:小区/楼盘/街道></div><div class=wui_cell_rt><i class=icon_arrow_right></i></div></div><div class=wui_cell><div class=wui_cell_lt>详细地址</div><div class="wui_cell_ct wui_cell_primary"><input type=text id=room_num class="ct_text ct_input_90 city" placeholder=楼层/房号></div></div><div class="wui_cell dishInfo_message"><div class="wui_cell_ct wui_cell_primary"><p class="ct_text ct_120 color_red font_28" id=transFee></p></div></div></div></div><div class=wui_sheet_footer><div class=wui_sheet_footer_ct><span class=address_finish>保存</span></div></div></div></div><div id=dialog_location_map class=wui_sheet><div class=wui_sheet_body><div class=wui_sheet_content><div class=wui_title><div class=wui_cell_lt><i class=btn_back_top></i></div><div class="wui_cell_ct wui_cell_primary"><input type=text id=suggestId class=city placeholder=请输入地址 autocomplete=off></div></div><div id=container class=map></div><i class=marker></i><div id=map-result class=result><div class=location_list></div></div></div></div></div><div id=dialog_location_list class=wui_sheet><div class=wui_sheet_body><div class=wui_sheet_content><div class=wui_title><div class=wui_cell_lt><i class=btn_back_top></i></div><div class="wui_cell_ct wui_cell_primary"><p class=wui_cell_title>我的地址</p></div></div><div id=address_list class="wui_cells font_28"><div class="wui_cell address_item active" id=address1><div class=wui_cell_lt><i class=btn_list_select_normal></i></div><div class="wui_cell_ct wui_cell_primary ct_text_rows"><p class="location_street upper_title">广州市天河区银汇大厦</p><p class="location_door side_title color_999">18楼1806</p></div></div><div class="wui_cell address_item" id=address2><div class=wui_cell_lt><i class=btn_list_select_normal></i></div><div class="wui_cell_ct wui_cell_primary ct_text_rows"><p class="location_street upper_title">广州市天河区华南理工大学逸夫楼</p><p class="location_door side_title color_999">3306</p></div></div></div></div><div id=add_new_address class=wui_sheet_footer><div class=wui_sheet_footer_ct><i class=add_icon_yellow></i> <span class=add_text>添加新地址</span></div></div></div></div><div class=wui_sheet><div class="wui_sheet_body bounce_full bounce_bottom_in"><div class=wui_sheet_content><div class=store_maps id=ctrl_store_maps><div class=btn_closeMap style=z-index:10;></div><div class="swiper-container swiper-container-horizontal"><div class=swiper-wrapper id=ctrl_maps_content style="transition-duration: 0ms;"><div class=swiper-slide><img src=http://7xs4xd.com2.z0.glb.qiniucdn.com/TianHeBei_1.jpg class=main-img></div><div class=swiper-slide><img src=http://7xs4xd.com2.z0.glb.qiniucdn.com/PanYu_1.jpg class=main-img></div><div class=swiper-slide><img src=http://7xs4xd.com2.z0.glb.qiniucdn.com/HuaDu_1.jpg class=main-img></div></div><div class=swiper-pagination></div></div></div></div></div></div></div><script type=text/javascript>
+    var DATA = {
+        storeId      : 2,
+        openTime     : "11:00",
+        closeTime    : "02:00",
+        operateDate  : "2015-11-02",
+        presaleDates : 0,
+        area         : "A",
+        unfinished   : false,
+        addressId    : "28153",
+        location     : "",
+        detailAddress: "广州市天河区银汇大厦@1803",
+        addresses  : {
+            address28158 :
+            { id         : 28158,
+                cityCode   : "",
+                cityName   : "广州市",
+                lng        : "113.346585",
+                lat        : "23.149443",
+                area       : "A",
+                storeId    : 2,
+                openTime   : "11:00",
+                closeTime  : "02:00",
+                operateDate: "2015-11-02",
+                location     : "天润路与龙口东路交界（龙口东路331-337号）",
+                detailAddress : "太阳广场18楼1803室",
+            }
+            ,
+            address28156 :
+            { id         : 28156,
+                cityCode   : "",
+                cityName   : "",
+                lng        : "113.351551",
+                lat        : "23.146195",
+                area       : "A",
+                storeId    : 2,
+                openTime   : "11:00",
+                closeTime  : "02:00",
+                operateDate: "2015-11-02",
+                location     : "广州市天河区天河北路908号",
+                detailAddress : "高科大厦18楼1803",
+            }
+            ,
+            address28155 :
+            { id         : 28155,
+                cityCode   : "",
+                cityName   : "",
+                lng        : "113.35206",
+                lat        : "23.146536",
+                area       : "A",
+                storeId    : 2,
+                openTime   : "11:00",
+                closeTime  : "02:00",
+                operateDate: "2015-11-02",
+                location     : "广州市广州市广州市",
+                detailAddress : "信源大厦18楼1803室",
+            }
+
+        },
+        appointDate : '2016-03-12',
+        appointTime : '15:45'
+
+    };
+
+</script><script src=../../js/require.config.debug.js></script><script data-main=../../js/pages/order/order_start src=../../js/require.js></script></body></html>

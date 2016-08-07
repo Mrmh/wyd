@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="telephone=yes" name="format-detection">
+    <title>订餐</title>
+    <link rel="stylesheet" href="../../plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/order/order_start.css">
+    <script src="../../js/common/hotcss.js"></script>
+    <script type="text/javascript">
+        var assets = "../..";
+    </script>
+</head>
+<body>
+<div class="wui_container">
+    <div class="wui_header"></div>
+    <div class="wui_content">
+        <div class="banner new_user"></div>
+        <div class="wui_cells no_border_bottom" data-newuser='false' data-store='1' data-opentime='11:00' data-closetime='01:00' data-operatedate=''>
+            <div class="wui_cell order_location">
+                <div class="wui_cell_lt">
+                    <i class="icon_step_1"></i>
+                    <i class="icon_location"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <span  class="order_text order_location_detail" data-addressid="1" data-addresslang="113.351673" data-addresslat="23.149684">
+                        <div class="ct_text_rows">
+                            <p class="upper_title" id="ctrl_detail_address">广州市天河区龙怡路银汇大厦</p>
+                            <p class="side_title color_999" id="ctrl_cityname">1803室</p>
+                        </div>
+                    </span>
+                </div>
+                <div class="wui_cell_rt">
+                    <i class="icon_arrow_right"></i>
+                </div>
+            </div>
+            <div class="wui_cell order_appointdate">
+                <div class="wui_cell_lt cell_lt_bd clear">
+                    <i class="icon_step_2"></i>
+                    <i class="icon_time"></i>
+                </div>
+                <div class="wui_cell_ct wui_cell_primary">
+                    <p class="order_text dish_time">
+                        <span class="dish_time_text">用餐日期</span>
+                    </p >
+                </div>
+                <div class="wui_cell_rt cell_rt_bd clear">
+                    <span id="ctrl_appoint_date" class="cell_rt_text left"></span>
+                    <i class="icon_arrow_right right"></i>
+                </div>
+            </div>
+            <div class="wei_cell">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="order_introduces font_28">
+                        <span class="order_intro">送餐时间提早至11:00am,覆盖午市,下午茶,晚市,宵夜,且有更多新品满足您。</span>
+                        <div class="service_contact">
+                            <span>客服热线:</span>
+                            <a href="tel:400-8756-313" class=“contact_number">  400-8756-313</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="wui_footer">
+        <div class="wui_footer_lt">
+            <i class="icons icon_logo_wyd"></i>
+        </div>
+        <div class="wui_footer_rt">
+            <i class="icons icon_btn_confirm"></i>
+        </div>
+    </div>
+<!--=======-->
+
+
+    <!--显示地图页面=======================================-->
+    <div id="dialog_location_map" class="wui_sheet">
+        <div class="wui_sheet_body">
+            <div class="wui_sheet_content">
+                <div class="wui_cell">
+                    <div class="wui_cell_lt">
+                        <i class="btn_back_top"></i>
+                    </div>
+                    <div class="wui_cell_ct wui_cell_primary">
+                        <input type="text" id="suggestId" class="city" placeholder="请输入地址" autocomplete="off" />
+                    </div>
+                </div>
+                <div id="container" class="map"></div>
+                <div id="map-result" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--查看地址列表信息===============================-->
+    <div id="dialog_location_list" class="wui_sheet">
+        <div class="wui_sheet_body">
+            <div class="wui_sheet_content">
+                <div id="address_list" class="wui_cells font_28">
+                    <div class="wui_cell">
+                        <div class="wui_cell_lt">
+                            <i class="btn_back_top"></i>
+                        </div>
+                        <div class="wui_cell_ct wui_cell_primary">
+                            <p class="wui_cells_title">我的地址</p>
+                        </div>
+                    </div>
+                    <div class="wui_cell address_item active" id="address1">
+                        <div class="wui_cell_lt">
+                            <i class="btn_list_select_normal"></i>
+                        </div>
+                        <div class="wui_cell_ct wui_cell_primary ct_text_rows">
+                            <p class="location_street upper_title">广州市天河区银汇大厦</p>
+                            <p class="location_door side_title color_999">18楼1806</p>
+                        </div>
+                    </div>
+                    <div class="wui_cell address_item" id="address2">
+                        <div class="wui_cell_lt">
+                            <i class="btn_list_select_normal"></i>
+                        </div>
+                        <div class="wui_cell_ct wui_cell_primary ct_text_rows">
+                            <p class="location_street upper_title">广州市天河区华南理工大学逸夫楼</p>
+                            <p class="location_door side_title color_999">3306</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="add_new_address" class="wui_sheet_footer">
+                <div class="wui_sheet_footer_ct">
+                    <i class="add_icon_yellow"></i>
+                    <span class="add_text">添加新地址</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--=============================================-->
+    <div id="dialog_map" class="wui_sheet">
+        <div class="wui_sheet_body">
+            <div class="wui_sheet_content">
+                <!--地图可选:
+                    广州(guangzhou.jpg)
+                    北京(beijing.jpg)
+                    上海(shanghai.jpg)
+                -->
+                <!--<img class="wui_sheet_map" src="../../img/pics/beijing.jpg" />-->
+            </div>
+        </div>
+    </div>
+
+    <div type="button" class="newMap" style="padding:40px 20px;background-color: #ccc;">点我显示地图</div>
+    <div class="maps">
+        <div class="btn_closeMap" style="z-index:10;"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../img/pics/ShangHai_1.jpg" class="main-img"></div>
+                <div class="swiper-slide"><img src="../../img/pics/TianHeBei.jpg" class="main-img"></div>
+                <div class="swiper-slide"><img src="../../img/pics/BeiJing_1.jpg" class="main-img"></div>
+                <div class="swiper-slide"><img src="../../img/pics/HuaDu.jpg" class="main-img"></div>
+                <div class="swiper-slide"><img src="../../img/pics/PanYu.jpg" class="main-img"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<script src="../../js/require.config.debug.js"></script>
+<script data-main="../../js/pages/order/order_start" src="../../js/require.js"></script>
+<script type="text/javascript">
+    var DATA = {
+        storeId      : 2,
+        openTime     : "11:00",
+        closeTime    : "02:00",
+        operateDate  : "2015-11-02",
+        presaleDates : 0,
+        area         : "A",
+        unfinished   : false,
+        addressId    : "28153",
+        location     : "",
+        detailAddress: "广州市天河区银汇大厦@1803",
+        addresses  : {
+            address28158 :
+            { id         : 28158,
+                cityCode   : "",
+                cityName   : "广州市",
+                lng        : "113.346585",
+                lat        : "23.149443",
+                area       : "A",
+                storeId    : 2,
+                openTime   : "11:00",
+                closeTime  : "02:00",
+                operateDate: "2015-11-02",
+                location     : "天润路与龙口东路交界（龙口东路331-337号）",
+                detailAddress : "太阳广场18楼1803室",
+            }
+            ,
+            address28156 :
+            { id         : 28156,
+                cityCode   : "",
+                cityName   : "",
+                lng        : "113.351551",
+                lat        : "23.146195",
+                area       : "A",
+                storeId    : 2,
+                openTime   : "11:00",
+                closeTime  : "02:00",
+                operateDate: "2015-11-02",
+                location     : "广州市天河区天河北路908号",
+                detailAddress : "高科大厦18楼1803",
+            }
+            ,
+            address28155 :
+            { id         : 28155,
+                cityCode   : "",
+                cityName   : "",
+                lng        : "113.35206",
+                lat        : "23.146536",
+                area       : "A",
+                storeId    : 2,
+                openTime   : "11:00",
+                closeTime  : "02:00",
+                operateDate: "2015-11-02",
+                location     : "广州市广州市广州市",
+                detailAddress : "信源大厦18楼1803室",
+            }
+
+        },
+        appointDate : '2016-03-12',
+        appointTime : '15:45'
+
+    };
+
+    // 查看地图操作
+    var maps = document.querySelector(".maps");
+
+    var showMapBtn = document.querySelector(".newMap");
+
+    var closeBtn = document.querySelector(".btn_closeMap");
+
+    showMapBtn.onclick = function(){
+        maps.classList.add('showMap');
+    } ;
+
+    closeBtn.onclick = function(){
+        maps.classList.remove('showMap');
+    } ;
+
+</script>
+</body>
+</html>

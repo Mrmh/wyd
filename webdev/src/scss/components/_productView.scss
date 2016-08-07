@@ -1,0 +1,214 @@
+@import "../base/px2rem";
+@import "../base/font";
+
+.product_list{
+  overflow:hidden;
+  position:relative;
+  width:100%;
+  height:inherit;
+}
+.menu_list{
+  float:left;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  box-sizing: border-box;
+  width:px2rem(150);
+  height:inherit;
+  background:#FFF;
+  border-right:px2rem(1) solid #e5c7b1;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+//#style-2::-webkit-scrollbar-track
+//{
+//  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+//  border-radius: 10px;
+//  background-color: #F5F5F5;
+//}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.menu_list::-webkit-scrollbar
+{
+  width:0;
+  //background-color: #FFF;
+}
+/*定义滑块 内阴影+圆角*/
+//#style-2::-webkit-scrollbar-thumb
+//{
+//  border-radius: 10px;
+//  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+//  background-color: #D62929;
+//}
+
+.products::-webkit-scrollbar
+{
+  width: 0;
+}
+
+.menu_list .menu_list_item{
+  box-sizing:border-box;
+  color:#666;
+}
+.menu_list .menu_item_icon{
+  display:block;
+  width:px2rem(150);
+  height:px2rem(100);
+  margin-top:px2rem(50);
+}
+.menu_item_text{
+  width:100%;
+  height:px2rem(50);
+  line-height:px2rem(50);
+  text-align:center;
+  @include px2px(30);
+  color:#666;
+}
+
+.products{
+  overflow-x:hidden;
+  overflow-y:scroll;
+  height:inherit;
+  margin-left: 3.2rem;
+  box-sizing: border-box;
+  background: #fff5ea;
+}
+.product_info img{
+  position:absolute;
+  display: block;
+  width: 100%;
+  //height:50%;
+  -ms-interpolation-mode:bicubic;
+  vertical-align:middle;
+  -webkit-user-select: none;/*禁用手机浏览器的用户选择功能 */
+  -webkit-touch-callout:none;
+  -webkit-pointer-events:none;
+  pointer-events:none;/*禁止长按图片出现收藏或保存*/
+}
+.product_info{
+  list-style:none;
+  color:#888;
+  margin:0 px2rem(10) px2rem(10);
+}
+
+.product_classify{
+  width:100%;
+  //height:px2rem(50);
+  line-height:px2rem(50);
+  //padding-left:px2rem(10);
+  color:#666;
+  @include px2px(28);
+}
+
+.product_info .product_message{
+  position:relative;
+  width:100%;
+  margin-bottom:px2rem(-2); /*解决div之间间隙问题*/
+  //height:80%;
+}
+.product_info .product_message::after{
+  content: '';
+  width:100%;
+  display:block;
+  padding-top:56.25%;
+  background:#F2F2F2;
+}
+
+.current_classify{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  line-height:px2rem(50);
+  margin-left:px2rem(150);
+  color:#666;
+  @include px2px(28);
+  z-index:999;
+  background:#fff5ea;
+}
+.classify_name{
+  display:block;
+  box-sizing: border-box;
+  width:100%;
+  padding-left:px2rem(9);
+}
+.discount_info{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: px2rem(50);
+  padding-left:px2rem(9);
+  background: #fff000;
+  @include px2px(24);
+  .icon_list_discount{
+    margin:0;
+    vertical-align:top;
+  }
+  .discount_text{
+    box-sizing: border-box;
+    margin-top:px2rem(5);
+    padding-right:px2rem(5);
+    display:inline-block;
+    width:px2rem(534);
+    line-height:1.5;
+  }
+}
+/*订餐时样式=======================================*/
+
+.product_detail{
+  float:left;
+  color:#EEE;
+  position:relative;
+}
+.product_name{
+  display:block;
+  font-weight:600;
+}
+.product_qty,.product_sold_count{
+  @include px2px(24);
+  font-weight:600;
+}
+
+.product_info .product_price{
+  position:relative;
+  box-sizing:border-box;
+  width:auto;
+  height:px2rem(80);
+  //line-height:px2rem(80);
+  padding:0 px2rem(20);
+  background:#111;
+}
+
+.product_message .money{
+  position:absolute;
+  right:0;
+  top:0;
+  width:px2rem(90);
+  height:px2rem(90);
+  line-height:px2rem(90);
+  border-bottom-left-radius: px2rem(45);
+  border-top-left-radius: px2rem(45);
+  //border-bottom-right-radius: px2rem(45);
+  background:rgba(226,115,50,.4);
+  text-align: right;
+  font-weight:600;
+}
+
+.product_select{
+  float:right;
+  //line-height:px2rem(60);
+}
+.product_select .dish_discount_c{
+  color:#999;
+}
+.product_discount_info{
+  float:left;
+  margin-right:px2rem(10);
+  margin-top:px2rem(12);
+}
+.product_count{
+  text-align:center;
+  width:px2rem(60);
+  height:px2rem(60);
+  line-height:px2rem(60);
+  vertical-align:middle;
+}
+.product_select .product_count{
+  display:none;
+}

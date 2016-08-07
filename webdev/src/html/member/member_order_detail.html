@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-dpr="3">
+<head>
+    <meta charset="UTF-8">
+    <title>订单明细</title>
+    <link rel="stylesheet" href="../../css/main.css"/>
+    <link rel="stylesheet" href="../../css/pages/member/member_order_detail.css">
+    <script src="../../js/common/hotcss.js"></script>
+    <script type="text/javascript">
+        var assets = "../..";
+    </script>
+</head>
+<body>
+<div class="wui_container">
+    <div class="wui_header">
+        <div class="page_main_title">
+            订单明细
+        </div>
+    </div>
+    <div class="wui_content">
+
+        <div class="wui_cells_title">订单状态</div>
+        <div class="wui_cell">
+            <div class="order_flow_status ordering">
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_ordering"></div>
+                </div>
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_line_1"></div>
+                </div>
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_cooking"></div>
+                </div>
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_line_2"></div>
+                </div>
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_delivering"></div>
+                </div>
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_line_3"></div>
+                </div>
+                <div class="flow_status_item">
+                    <div class="status_item_icon icon_order_status_finish"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wui_cell" data-page="member_order_list.html">
+            <div href="#" class="wui_cell_ct wui_cell_primary">
+                <div class="ct_text ct_90">
+                    特工XXXX正在为您配送
+                </div>
+            </div>
+            <div class="wui_cell_rt ">
+                <i class="icon_arrow_right"></i>
+            </div>
+        </div>
+
+        <div class="wui_cells_title">送餐地址 / 用餐时间</div>
+        <div class="wui_cells">
+            <div class="wui_cell">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        广州市天河区五山路银汇大厦1803室
+                    </div>
+                </div>
+            </div>
+            <div class="wui_cell">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                         2015/12/25 17:40
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wui_cells_title">菜品</div>
+        <div class="wui_cells">
+            <div class="wui_cell ">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        <span class="item_title">逼格龙虾 ×<em class="item_title_num">1</em></span>
+                    </div>
+                </div>
+                <div class="wui_cell_rt">
+                    <span class="money">68</span>
+                </div>
+            </div>
+            <div class="wui_cell">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        <span class="item_title">啪啪皮皮虾(大) ×<em class="item_title_num">1</em></span>
+                    </div>
+                </div>
+                <div class="wui_cell_rt">(惠)<span class="money">0</span></div>
+            </div>
+            <div class="wui_cell">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        <span class="item_title">啪啪皮皮虾(大) ×<em class="item_title_num">1</em></span>
+                    </div>
+                </div>
+                <div class="wui_cell_rt">(惠)<span class="money">68</span></div>
+            </div>
+        </div>
+
+        <p class="wui_cells_title">支付</p>
+        <div class="cells">
+            <div class="wui_cell">
+                <div class="wui_cell_ct wui_cell_primary ">
+                    <div class="ct_text ct_90">
+                        原价
+                    </div>
+                </div>
+                <div class="wui_cell_rt "><span class="money">168</span></div>
+            </div>
+            <div class="wui_cell ">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        猫眼石
+                    </div>
+                </div>
+                <div class="wui_cell_rt color_red">-<span class="money">20</span></div>
+            </div>
+            <div class="wui_cell">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        已支付
+                    </div>
+                </div>
+                <div class="wui_cell_rt color_red">
+                    <span class="already_pay">-<span class="money">300</span></span>
+                    <span class="pay_way ">微信支付</span>
+                </div>
+            </div>
+            <div class="wui_cell ">
+                <div class="wui_cell_ct wui_cell_primary">
+                      <div class="ct_text ct_90">
+                         还需支付
+                      </div>
+                </div>
+                <div class="wui_cell_rt color_red"><span class="money">280</span></div>
+            </div>
+            <div class="wui_cell ">
+                <p class="item_title_beyond font_28">地址超出送餐范围！ 需支付额外的交通费用，具体金额请以我们的特工单据做准。</p>
+            </div>
+            <div class="wui_cell ">
+                <div class="wui_cell_ct wui_cell_primary">
+                    <div class="ct_text ct_90">
+                        支付方式
+                    </div>
+                </div>
+                <div class="wui_cell_rt">到付(刷卡)</div>
+            </div>
+        </div>
+
+        <p class="wui_cells_title ">订餐信息</p>
+        <div class="wui_cells">
+            <div class="wui_cell  ">
+                <div class="wui_cell_ct wui_cell_primary ">
+                    <div class="ct_text ct_90">
+                        用餐人数
+                    </div>
+
+                </div>
+                <div class="wui_cell_rt ">1人</div>
+            </div>
+            <div class="wui_cell ">
+                <div class="wui_cell_ct wui_cell_primary ">
+                    <div class="ct_text ct_90">
+                        口味
+                    </div>
+                </div>
+                <div class="wui_cell_rt ">正常辣</div>
+            </div>
+            <div class="wui_cell cell_padding_bottom">
+                <div class="wui_cell_ct wui_cell_primary ">
+                    <div class="ct_text ct_90">
+                        进门服务
+                    </div>
+
+                </div>
+                <div class="wui_cell_rt">不需要</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="wui_footer">
+        <div class="wui_footer_lt">
+            <i class="btn_back">
+                <a href="member_points.html" class="icon_clickable"></a>
+            </i>
+        </div>
+        <div class="wui_footer_ct footer_ct_bd clear">
+            <i class="icon_total"></i>
+            <span class="money color_red">680</span>
+        </div>
+        <div class="wui_footer_rt">
+            <i class="btn_order_pay">
+                <a href="#" class="icon_clickable"></a>
+            </i>
+        </div>
+    </div>
+</div>
+</body>
+</html>

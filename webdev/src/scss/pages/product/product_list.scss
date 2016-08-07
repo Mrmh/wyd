@@ -1,0 +1,144 @@
+
+@import "../../base/px2rem";
+
+.wui_container .products_bottom{
+  padding-bottom:0;
+}
+
+.show_background_img:before {
+  content: '';
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  bottom: 0;
+  background: url(../../../img/data_images/youHui.png) 0 100% no-repeat;
+  height: 50px;
+  background-size: 200px;
+  z-index: 9;
+}
+.discount_wrapper {
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+
+  .discount_intro , .discount_old_price ,.discount_current_price{
+    position: absolute;
+    bottom: 0;
+    line-height: 24px;
+  }
+
+  .discount_intro {
+    width: px2rem(350);
+    right: 4px;
+  }
+  .discount_old_price {
+    color: rgb(243,186,35);
+    left: 0;
+  }
+
+  .discount_old_price:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -2px;
+    left: -4px;
+    background-size: cover;
+    background-image: url(../../../img/data_images/shadow.png) ;
+
+  }
+  .discount_current_price {
+    color: #f03;
+    width: 90px;
+    right: 8px;
+  }
+  .price_num {
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: -2px;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  }
+  .num_bigger {
+    font-size: 26px;
+    margin-left: -4px;
+  }
+  .price_text {
+    font-size: 15px;
+    font-family:'SiYuanBold339751c4726b1';
+  }
+  .symble {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 320px){
+    .price_num {
+      font-size: 18px;
+    }
+    .num_bigger {
+      font-size: 22px;
+    }
+    .price_text {
+      font-size: 14px;
+    }
+    .discount_old_price {
+      left: 14px;
+    }
+    .discount_current_price {
+      width: 80px;
+      right : -4px;
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    .price_text {
+      font-size: 18px;
+    }
+    .price_num {
+      font-size: 26px;
+    }
+    .num_bigger {
+      font-size: 30px;
+    }
+    .discount_old_price {
+      left: -10px;
+    }
+    .discount_current_price {
+      width: 106px;
+      right: 5px;
+    }
+  }
+}
+.discount_mask:before{
+  content: '';
+  position: absolute;
+  height: 45px;
+  width: 166%;
+  bottom: 0;
+  right: -4px;
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,.7),transparent);
+}
+
+.discount_wrapper.no_discount {
+  background: none;
+
+  .price_num {
+    float: right;
+    margin-right: 8px;
+  }
+  .discount_current_price {
+    background: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

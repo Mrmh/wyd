@@ -1,0 +1,135 @@
+@import "../base/px2rem";
+
+/*order_start===============================*/
+.new_user,.old_user,
+.address_1,.address_2,
+.member_banner{
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:px2rem(150);
+  width:100%;
+}
+.new_user {
+  background-image:url(../img/pics/newUser.png);
+}
+.old_user {
+  background-image:url(../img/pics/oldUser.png);
+}
+/*order_user_info====================*/
+.address_1{
+  background-image: url(../img/pics/address_1.png);
+}
+/*order_dish_info====================*/
+.address_2{
+  background-image: url(../img/pics/address_2.png);
+}
+/*order_result_success=====================*/
+.show_my_order {
+  width: px2rem(380);
+  height: px2rem(490);
+  margin-left: px2rem(-190);
+  left: 50%;
+  top: 40%;
+  margin-top: px2rem(-160);
+  -webkit-user-select: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url(../img/pics/order_success.jpg);
+
+}
+
+
+.shareToCircle{
+  width: px2rem(400);
+  height:px2rem(200);
+  float: right;
+  margin: px2rem(20);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url(../img/pics/share_to_friends.png);
+  -webkit-animation: rubberBand 1s both;
+}
+@keyframes rubberBand {
+  0%{-webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
+  30%{-webkit-transform: scale3d(1.25, 0.75, 1); transform: scale3d(1.25, 0.75, 1);}
+  40%{-webkit-transform: scale3d(0.75, 1.25, 1); transform: scale3d(0.75, 1.25, 1);}
+  50%{-webkit-transform: scale3d(1.15, 0.85, 1); transform: scale3d(1.15, 0.85, 1);}
+  65%{-webkit-transform: scale3d(.95, 1.05, 1); transform: scale3d(.95, 1.05, 1);}
+  75%{-webkit-transform: scale3d(1.05, .95, 1); transform: scale3d(1.05, .95, 1);}
+  100%{-webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
+}
+
+/*member_index=====================================*/
+
+.member_banner{
+  background-image: url(../img/pics/address_1.png);
+}
+
+/*member_order_score===============================*/
+.service_rate {
+  width: px2rem(90);
+  height:px2rem(90);
+  margin: 0 px2rem(15) 0 0;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 50%;
+}
+.rate_bad_normal{
+  background-image: url(../img/pics/rate_bad_normal.png);
+}
+.rate_general_normal{
+  background-image: url(../img/pics/rate_general_normal.png);
+}
+.rate_good_normal{
+  background-image: url(../img/pics/rate_good_normal.png);
+}
+.rate_bad_selected{
+  background-image: url(../img/pics/rate_bad_selected.png);
+}
+.rate_general_selected{
+  background-image: url(../img/pics/rate_general_selected.png);
+}
+.rate_good_selected{
+  background-image: url(../img/pics/rate_good_selected.png);
+}
+.score_tips{
+  display:inline-block;
+  width:px2rem(566);
+  height:px2rem(100);
+  margin-bottom:px2rem(200);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.score_tips_50{
+  background-image: url(../img/pics/score_50.png);
+}
+.score_tips_100 {
+  background-image: url(../img/pics/score_100.png);
+}
+/*member_profile===============================*/
+.profile_infos_tail{
+  height: px2rem(50);
+  background-color: rgb(253,245,233);
+  background-image: url(../img/pics/pic_myinfo_form_bottom.png);
+}
+.background_header_left,.background_header_right{
+  position: absolute;
+  width:35px;
+  height:70px;
+  top:6px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.background_header_left{
+  left:-10px;
+  background-image:url(../img/pics/pic_myinfo_form_top_left.png);
+}
+.background_header_right{
+  right:-10px;
+  background-image:url(../img/pics/pic_myinfo_form_top_right.png);
+}

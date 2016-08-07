@@ -1,0 +1,173 @@
+
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/functions";
+@import "../base/px2rem";
+
+/*member_index====================*/
+.icon_myinfo_process,.icon_myinfo_points,
+.icon_myinfo_coupon_available,.icon_myinfo_coupon_unavailable{
+  width:px2rem(100);
+  height:px2rem(100);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_myinfo_process{
+  background-image: url(../img/icon_member/icon_myinfo_process.png);
+}
+.icon_myinfo_points{
+  background-image: url(../img/icon_member/icon_myinfo_maoyanshi.png);
+}
+.icon_myinfo_coupon_available{
+  background-image: url(../img/icon_member/icon_myinfo_coupon_available.png);
+}
+.icon_myinfo_coupon_unavailable{
+  background-image: url(../img/icon_member/icon_myinfo_coupon_unavailable.png);
+}
+.icon_myinfo_building{
+  width:px2rem(180);
+  height:px2rem(200);
+  background-image:url(../img/icon_member/icon_myinfo_building.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+/*member_order_detail=========================*/
+
+
+
+/*member_order_list===========================*/
+
+.icon_myinfo_process_order,
+.icon_myinfo_process_cooking,
+.icon_myinfo_process_delivery,
+.icon_myinfo_process_finish{
+  display:inline-block;
+  width:px2rem(80);
+  height:px2rem(120);
+  background-size: cover;
+}
+.icon_myinfo_process_order {
+  background-image: url(../img/icon_member/icon_myinfo_process_order.png);
+}
+.icon_myinfo_process_cooking {
+  background-image: url(../img/icon_member/icon_myinfo_process_cooking.png);
+}
+.icon_myinfo_process_delivery {
+  background-image: url(../img/icon_member/icon_myinfo_process_delivery.png);
+}
+.icon_myinfo_process_finish {
+  background-image: url(../img/icon_member/icon_myinfo_process_finish.png);
+}
+
+/*member_order_raider==============================*/
+
+.service_star{
+  display: inline-block;
+  width: px2rem(60);
+  height: px2rem(60);
+  background-image: url(../img/icon_member/icon_myinfo_star.png);
+  background-size: cover;
+  margin-right:px2rem(10);
+}
+
+
+
+
+
+
+
+
+
+/*member_profile================================*/
+.icon_profile_name,.icon_profile_phone,
+.icon_profile_job,.icon_profile_birthday,
+.icon_profile_fav_dishes,.icon_profile_fav_sweets,
+.icon_profile_fav_drinks {
+  display: block;
+  width:px2rem(48);
+  height: px2rem(48);
+  margin: px2rem(5) px2rem(10) px2rem(5) px2rem(3);
+  background-size: cover;
+  background-position: center;
+}
+
+.icon_profile_name{
+  background-image: url(../img/icon_member/icon_name.png);
+}
+
+.icon_profile_phone{
+  background-image: url(../img/icon_member/icon_phone.png);
+}
+.icon_profile_job{
+  background-image: url(../img/icon_member/icon_job.png);
+}
+.icon_profile_birthday{
+  background-image: url(../img/icon_member/icon_brithday.png);
+}
+
+.icon_profile_fav_dishes{
+  background-image: url(../img/icon_member/icon_favofood.png);
+}
+.icon_profile_fav_sweets{
+  background-image: url(../img/icon_member/icon_favodessert.png);
+}
+.icon_profile_fav_drinks{
+  background-image: url(../img/icon_member/icon_favodrink.png);
+}
+.icon_profile_job{
+
+}
+
+//关单、评分
+
+.icon_myinfo_process_score,
+.icon_myinfo_process_close{
+  display:inline-block;
+  width: px2rem(100);
+  height:px2rem(40);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon_myinfo_process_score{
+  background-image:url(../img/icon_member/icon_myinfo_process_score.png);
+}
+.icon_myinfo_process_close{
+  background-image:url(../img/icon_member/icon_myinfo_process_close.png);
+}
+
+.order_arrive_btn_sm ,
+.order_score_btn_sm {
+  display:inline-block;
+  width: px2rem(100);
+  height:px2rem(40);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+  //送达
+.order_arrive_btn_sm {
+  background-image:url(../img/icon_member/order_arrive_btn_sm.png);
+}
+
+//评分
+.order_score_btn_sm {
+  background-image:url(../img/icon_member/order_score_btn_sm.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

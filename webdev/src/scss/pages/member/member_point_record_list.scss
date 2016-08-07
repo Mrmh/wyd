@@ -1,0 +1,24 @@
+
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+@import "../../base/font";
+
+.wui_cell {
+  border-bottom: 1px solid $border_gray;
+}
+.ct_text_rows{
+  padding:px2rem(31) 0;
+  line-height:1.2;
+}
+.ct_120{
+  padding:px2rem(53.5) 0;
+  margin:0;
+}
+.score_income,.out_income{
+  margin-top: px2rem(20);
+}
+
+.score_income{
+  color:$font_pink;
+}
+

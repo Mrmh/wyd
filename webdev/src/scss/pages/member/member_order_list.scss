@@ -1,0 +1,75 @@
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+@import "../../base/font";
+
+.wui_cells .order_finish{
+  color:#999;
+  .orderContent_pay{
+    color:#999;
+  }
+}
+.wui_cell:last-child{
+  margin-bottom:px2rem(120);
+}
+.wui_cell{
+  padding: px2rem(20) px2rem(30) px2rem(20) 0;
+  border-bottom: 1px solid $border_gray;
+}
+.wui_cell_lt{
+  display: inline-block;
+  width:px2rem(200);
+  text-align: center;
+}
+.wui_cell_ct{
+  @include px2px(28);
+  line-height: 1.5;
+}
+.orderContent_num{
+  color: #999;
+}
+.orderContent_time,.orderContent_address{
+  display:block;
+}
+.orderContent_pay{
+  color:#FF0033;
+}
+.orderContnet_price{
+  margin-left:px2rem(10);
+}
+
+.order_operate_btn{
+  position: absolute;
+  top:0;
+  right:px2rem(20);
+  text-decoration: none;
+}
+.order_more_div{
+  border:0;
+  overflow: hidden;
+}
+.btn_order_more {
+  box-sizing: border-box;
+  display: block;
+  width:px2rem(200);
+  padding:px2rem(12) px2rem(20);
+  margin: px2rem(20) auto px2rem(100);
+  text-align: center;
+  background:#999;
+  border-radius: px2rem(15);
+  border:none;
+  font:inherit;
+  @include px2px(34);
+  color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+
+}
+.btn_order_more:active{
+  transform: scale(.96);
+  -webkit-transform: scale(.96);
+}
+

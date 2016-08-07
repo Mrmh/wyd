@@ -1,0 +1,41 @@
+@import "../base/px2rem";
+@import "../base/font";
+
+//底部弹出购物车样式
+
+.wui_sheet .cart_contents{
+  position: relative;
+  width: 100%;
+  max-height: px2rem(650);
+  overflow-y: scroll;
+  background: #f2f2f2;
+}
+.cart_contents .wui_cell{
+  padding:0 px2rem(50);
+}
+.icon_list_discount{
+  margin-top:px2rem(6);
+}
+.cart_product_price{
+  display:inline-block;
+  width:px2rem(85);
+  height:px2rem(60);
+  line-height:px2rem(60);
+  text-align: right;
+  margin-right:px2rem(20);
+}
+.cart_contents .ct_text{
+  margin-left:0;
+}
+.cart_product_delete{
+  position:absolute;
+  bottom:px2rem(10);
+  left:0;
+}
+.productCount{
+  display:inline-block;
+  text-align:right;
+  width:px2rem(90);
+  height:px2rem(60);
+  line-height:px2rem(60);
+}

@@ -1,0 +1,130 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui"><meta content=yes name=apple-mobile-web-app-capable><meta content=black name=apple-mobile-web-app-status-bar-style><meta content="telephone=no" name=format-detection><meta content="email=no" name=format-detection><title></title><script src=../../js/common/hotcss.js></script><link rel=stylesheet href=../../css/main.css><link rel=stylesheet href=../../css/pages/product/LArea.css></head><body class=static><div class=demo-content><div class=content-block><input id=demo2 class=addressAdd type=text readonly name=input_date placeholder=请选择用餐地址> <input id=value2 type=hidden name=input_date></div></div><script src=../../js/pages/product/LArea.js></script><script>
+var provs_data = [{
+        "text": "北京",
+        "value": "1"
+    }, {
+        "text": "上海",
+        "value": "2"
+    }, {
+        "text": "广州",
+        "value": "3"
+    }, {
+        "text": "深圳",
+        "value": "4"
+    }];
+var citys_data = {
+    "1": [{
+        "text": "甘露园点",
+        "value": "11"
+    }, {
+        "text": "建外SOHO点",
+        "value": "12"
+    }],
+    "2": [{
+        "text": "长宁点",
+        "value": "21"
+    }],
+    "3": [{
+        "text": "珠江新城点",
+        "value": "31"
+    }, {
+        "text": "天河北点",
+        "value": "32"
+    }, {
+        "text": "番禺点",
+        "value": "33"
+    }, {
+        "text": "花都点",
+        "value": "34"
+    }],
+    "4":[{
+        "text": "福田区",
+        "value": "41"
+    },{
+        "text": "南山区",
+        "value": "42"
+    }],
+};
+var dists_data = {
+    "11": [{
+        "text": "甘露园街道1",
+        "value": "111"
+    }, {
+        "text": "甘露园街道2",
+        "value": "112"
+    }, {
+        "text": "甘露园街道3",
+        "value": "113"
+    }, {
+        "text": "甘露园街道4",
+        "value": "114"
+    }, {
+        "text": "甘露园街道5",
+        "value": "115"
+    }],
+    "12": [{
+        "text": "建外街道1",
+        "value": "111"
+    }, {
+        "text": "建外街道2",
+        "value": "112"
+    }],
+    "21": [{
+        "text": "长宁街道1",
+        "value": "211"
+    }, {
+        "text": "长宁街道2",
+        "value": "212"
+    }],
+    "31": [{
+        "text": "珠江新城街道1",
+        "value": "311"
+    }, {
+        "text": "珠江新城街道2",
+        "value": "312"
+    }],
+    "32": [{
+        "text": "天河北街道1",
+        "value": "311"
+    }, {
+        "text": "天河北街道2",
+        "value": "312"
+    }],
+    "33": [{
+        "text": "番禺街道1",
+        "value": "311"
+    }, {
+        "text": "番禺街道2",
+        "value": "312"
+    }],
+    "34": [{
+        "text": "花都街道1",
+        "value": "311"
+    }, {
+        "text": "花都街道2",
+        "value": "312"
+    }],
+    "41": [{
+        "text": "福田街道1",
+        "value": "411"
+    }, {
+        "text": "福田街道2",
+        "value": "412"
+    }],
+    "42": [{
+        "text": "南山街道1",
+        "value": "411"
+    }, {
+        "text": "南山街道2",
+        "value": "412"
+    }],
+};
+var area2 = new LArea();
+area2.init({
+    'trigger': '#demo2',//触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+    'valueTo':'#value2',//选择完毕后id属性输出到该位置
+    'keys':{id:'value',name:'text'},//绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+    'type':2,//数据源类型
+    'data':[provs_data,citys_data,dists_data]//数据源
+});
+</script></body></html>

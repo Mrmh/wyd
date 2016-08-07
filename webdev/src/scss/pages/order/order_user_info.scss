@@ -1,0 +1,67 @@
+@import "../../base/font";
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+@import "../../helpers/functions";
+@import "../../helpers/mixins";
+
+.ct_text_rows {
+  padding:px2rem(25) 0 px2rem(25) px2rem(30);
+  line-height:1.2;
+}
+
+.contact_name,.contact_phone {
+  height: px2rem(116);
+  width:80%;
+  @include input-holders(0,0);
+  border:0;
+  padding-left: px2rem(30);
+  border-radius:0;
+  margin-bottom: 1px;
+}
+.userInfo_message {
+  padding: px2rem(20) px2rem(120);
+  border-bottom: 0;
+  .message_title {
+    padding-bottom:px2rem(20);
+  }
+  .message_content {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    transition: all .2s;
+    line-height: 1.4;
+    height:px2rem(150);
+    border-radius: 4px;
+
+    &:focus {
+      border-color: #aaa;
+    }
+  }
+}
+
+.footer_ct_bd {
+  .icon_total {
+    margin-top: 5px;
+  }
+  .money {
+     float:none;
+     margin:0 0 0 px2rem(10);
+     line-height: 25px;
+     @include px2px(40);
+  }
+}
+.arriveTime {
+  @include px2px(34);
+}
+
+.userInfoDate {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  top: px2rem(20);
+  right:0;
+  position: absolute;
+  background-color: transparent;
+
+  @include px2px(34);
+}

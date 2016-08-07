@@ -1,0 +1,14 @@
+
+node_modules
+*.css.map
+*.js.map
+.env
+.idea
+.settings
+.env
+.sample
+.DS_Store
+Homestead.yaml
+npm-debug.log
+build
+.idea

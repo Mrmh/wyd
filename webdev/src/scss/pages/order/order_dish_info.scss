@@ -1,0 +1,51 @@
+@import "../../base/font";
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+$order_font_gray:#ccc;
+$footer_gray:#ccc;
+
+.cell_rt_text .money{
+  margin-top:px2rem(3);
+}
+
+.btn_order_add{
+  line-height: px2rem(70);
+  background:#FFF000;
+  border-radius: px2rem(15);
+  padding:0 px2rem(10);
+  @include px2px(24);
+}
+
+.dishInfo_message{
+  padding:0 px2rem(80) px2rem(100) px2rem(115);
+  border-bottom:0;
+  line-height:1.4;
+  .ct_text{
+    padding:px2rem(20) 0;
+    margin:0;
+  }
+}
+.footer_ct_bd{
+  .innerText{
+    float:none;
+    @include px2px(28);
+    margin-top:px2rem(8);
+  }
+  .money{
+    float:none;
+    @include px2px(40);
+    margin-left:px2rem(10);
+  }
+  .productCount{
+    width:px2rem(90);
+  }
+}
+
+
+
+
+
+
+
+
+

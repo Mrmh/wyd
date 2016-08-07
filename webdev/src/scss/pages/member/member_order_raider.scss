@@ -1,0 +1,48 @@
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+@import "../../base/font";
+
+.wui_container{
+  padding-bottom:px2rem(100);
+}
+.wui_cell{
+  position: relative;
+  padding: px2rem(24) px2rem(50);
+}
+.wui_cells .raider_info{
+  text-align: center;
+}
+.raider_title{
+  padding:px2rem(23);
+  text-align: center;
+}
+
+.raider_info_detail{
+  overflow: auto;
+  border-bottom: 1px solid $line_light_gray;
+  border-top:1px solid $line_light_gray;
+
+}
+
+.raider_icon{
+  width:px2rem(400);
+  height:auto;
+  background-size: cover;
+}
+
+.raider_phone_text{
+  color:#999;
+}
+
+.raider_right{
+  padding-left: px2rem(90);
+  margin-top:px2rem(40);
+}
+.raider_name{
+  margin:px2rem(20) 0 px2rem(15);
+}
+.start_text{
+  float: left;
+  margin-top:px2rem(14);
+  margin-right: px2rem(40);
+}

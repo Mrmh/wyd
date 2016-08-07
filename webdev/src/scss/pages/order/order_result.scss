@@ -1,0 +1,72 @@
+@import "../../base/font";
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+
+.order_status{
+  text-align: center;
+  line-height: 1.2;
+
+  .order_status_title,
+  .show_my_order,
+  .order_status_text,
+  .my_Sudoku {
+    position: absolute;
+  }
+  .order_status_title {
+    width:100%;
+    top:12%;
+    @include px2px(40);
+  }
+
+  .order_status_title > span {
+    color:$font_pink ;
+  }
+  .order_status_text{
+    padding: px2rem(35) 0;
+    background-color: #fff5ea;
+    border-top: 1px solid $border_gray;
+    border-bottom: 1px solid $border_gray;
+    @include px2px(40);
+    bottom:px2rem(120);
+    width:100%;
+  }
+  .my_Sudoku{
+    padding:px2rem(20) 0 px2rem(21);
+    bottom:0;
+    width:100%;
+    line-height: 1;
+    @include px2px(34);
+    font-weight: 500;
+  }
+  .my_Sudoku_tip{
+    color: #aaa;
+    @include px2px(28);
+    margin: px2rem(4) 0;
+  }
+  .my_Sudoku_tip > span {
+    color:$font_pink;
+  }
+}
+.wui_footer{
+  display: none;
+}
+.wui_content{
+  padding-bottom: px2rem(400);
+}
+//灰色遮罩层
+.mask{
+  display: none;
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.3);
+}
+.mask.active{
+  display: block;
+}
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+@import "../../base/px2rem";
+@import "../../base/font";
+.product_detail_pic{
+  width:100%;
+  height:inherit;
+  overflow: hidden;
+}
+.detail_pic{
+  width:100%;
+  height:40%;
+}
+.product_detail_name{
+  width:90%;
+  padding:0 5%;
+  height:px2rem(80);
+  line-height:2.4;
+  border-bottom:1px solid #F2F2F2;
+  font-weight:600;
+  color:#333;
+  text-align: right;
+}
+.detail_name{
+  float:left;
+}
+.detail_price{
+  color:#f03;
+}
+.product_detail_info{
+  width:90%;
+  padding:2% 5%;
+  text-align:left;
+  border-bottom:1px solid #F2F2F2;
+}
+.product_detail_num{
+  color:#CCC;
+}
+.product_detail_component,.product_detail_introduce{
+  color:#333;
+  display:inline-block;
+}
+.product_detail_introduce{
+  line-height:2.4;
+}
+.detail_img{
+  width:100%;
+  height:50%;
+  margin:.5rem 0;
+}
+.product_detail_select{
+  font-weight:600;
+  color:#333;
+  line-height:2.4;
+}
+.product_detail_make{
+  width:90%;
+  padding:2% 5%;
+  margin-bottom:5rem;
+}
+.product_make{
+  color:#ccc;
+}
+.product_make_info{
+  margin-bottom:1rem;
+}

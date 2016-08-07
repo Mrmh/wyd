@@ -1,0 +1,22 @@
+/* FUNCTIONING MIXIN
+============================================= */
+@function calculate-width ($col-span) {
+  @return 100% / $col-span
+}
+
+
+/* PLACEHOLDER
+============================================= */
+%btn{
+  display: block;
+  text-align: center;
+  border:none;
+  shadow:none;
+}
+
+
+/* FUNCTIONING MIXIN
+============================================= */
+@function calculate-width ($col-span) {
+  @return 100% / $col-span
+}

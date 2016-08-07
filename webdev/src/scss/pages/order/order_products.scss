@@ -1,0 +1,214 @@
+@import "../../base/font";
+@import "../../base/px2rem";
+
+
+html，body::-webkit-scrollbar{
+  width:0;
+  height:0;
+}
+
+.wui_content{
+  overflow-y: hidden;
+}
+
+
+/*header中swiper轮播样式*/
+.swiper-container{
+  width:100%;
+  height:px2rem(150);
+  z-index: 99999999;
+}
+.swiper-slide img {
+  display:block;
+  width: 100%;
+  height:100%;
+}
+.swiper-pagination-bullet {
+  width: px2rem(14);
+  height: px2rem(14);
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+  z-index: 9999999;
+}
+.swiper-pagination-bullet-active{
+  opacity: 1;
+  background: #fff000;
+}
+
+/*footer============================================*/
+
+.product_num {
+  position:absolute;
+  left:px2rem(90);
+  top:px2rem(8);
+  @include px2px(24);
+  width:px2rem(32);
+  height:px2rem(32);
+  padding:px2rem(2);
+  line-height:px2rem(32);
+  text-align:center;
+  border-radius:50%;
+  z-index:100;
+  color: #fff;
+  background: red;
+}
+
+.wui_footer .footer_ct_bd{
+  @include px2px(40);
+}
+.footer_ct_bd{
+  .icon_total{
+    margin-top:px2rem(10);
+  }
+  .money{
+    float:none;
+    margin:px2rem(5) 0 0 px2rem(10);
+    @include px2px(40);
+  }
+}
+.gptu,.inall{
+  position:absolute;
+  right:px2rem(20);
+  display:inline-block;
+  @include px2px(24);
+}
+.gptu{
+  top:px2rem(12);
+  color:#FF0033;
+}
+.inall{
+  bottom:px2rem(12);
+}
+
+
+.show_background_img:before {
+  content: '';
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  bottom: 0;
+  background: url(../../../img/data_images/youHui.png) 0 100% no-repeat;
+  height: 50px;
+  background-size: 200px;
+  z-index: 1;
+}
+.discount_wrapper {
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+
+  .discount_intro , .discount_old_price ,.discount_current_price{
+    position: absolute;
+    bottom: 0;
+    line-height: 24px;
+  }
+
+  .discount_intro {
+    width: px2rem(350);
+    right: 4px;
+  }
+  .discount_old_price {
+    color: rgb(243,186,35);
+    left: 0;
+  }
+
+  .discount_old_price:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -2px;
+    left: -4px;
+    background-size: cover;
+    background-image: url(../../../img/data_images/shadow.png) ;
+
+  }
+  .discount_current_price {
+    color: #f03;
+    width: 86px;
+    right: 4px;
+    text-align: right;
+  }
+  .price_num {
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: -2px;
+    position: relative;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  }
+  .symble_money:before {
+    content: '¥';
+    font-size: 16px;
+  }
+  .num_bigger {
+    font-size: 26px;
+  }
+  .price_text {
+    margin-top: 3px;
+    font-size: 15px;
+    font-family:'SiYuanBold339751c4726b1';
+  }
+
+  @media screen and (max-width: 320px){
+    .price_num {
+      font-size: 18px;
+    }
+    .num_bigger {
+      font-size: 22px;
+      margin-right: 5px;
+    }
+    .price_text {
+      font-size: 12px;
+    }
+    .discount_old_price {
+      left: 10px;
+    }
+    .discount_current_price {
+      width: 80px;
+      right : -4px;
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    .price_text {
+      font-size: 18px;
+    }
+    .price_num {
+      font-size: 26px;
+    }
+    .num_bigger {
+      font-size: 30px;
+    }
+    .discount_old_price {
+      left: -10px;
+    }
+    .discount_current_price {
+      width: 100px;
+      right: 5px;
+    }
+  }
+}
+.discount_mask:before{
+  content: '';
+  position: absolute;
+  height: 26px;
+  width: 166%;
+  bottom: 0;
+  right: -4px;
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,.7),transparent);
+}
+
+.discount_wrapper.no_discount {
+  background: none;
+
+  .price_num {
+    float: right;
+  }
+  .discount_current_price {
+    background: none;
+  }
+
+}

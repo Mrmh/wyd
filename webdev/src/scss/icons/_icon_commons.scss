@@ -1,0 +1,318 @@
+
+@import "../base/px2rem";
+@import "../helpers/variables";
+
+
+/*order_start================================*/
+
+.icon_location,.icon_time,.icon_step_1,.icon_step_2 {
+  display: inline-block;
+}
+.icon_step_1,.icon_step_2{
+  width: px2rem(48);
+  background-size: cover;
+
+}
+.icon_step_1 {
+  height:px2rem(150);
+  background-image: url(../img/icon_commons/icon_no1.png);
+  margin-top:px2rem(5);
+}
+.icon_step_2 {
+  height:px2rem(120);
+  background-image: url(../img/icon_commons/icon_no2.png);
+}
+.icon_location,.icon_time{
+  margin:0 px2rem(24);
+  width: px2rem(48);
+  height: px2rem(48);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_location{
+  margin-bottom:px2rem(50);
+  background-image: url(../img/icon_commons/icon_order_address.png);
+}
+.icon_time{
+  //top:px2rem(45);
+  margin-bottom:px2rem(35);
+  background-image: url(../img/icon_commons/icon_order_time.png);
+}
+
+.icon_arrow_right{
+  width: px2rem(48);
+  height: px2rem(48);
+  display:inline-block;
+  background-image: url(../img/icon_commons/icon_arrow_right.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_logo_wyd{
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon_logo_wyd{
+  width:px2rem(200);
+  height: px2rem(80);
+  left:0;
+  top:0;
+  background-image: url(../img/icon_commons/icon_logo_wyd.png);
+  background-position: center;
+}
+
+//order_start添加地址页面=============================
+.icon_room{
+  position:absolute;
+  width:px2rem(120);
+  height:px2rem(100);
+  left:0;
+  top:px2rem(100);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/icon_commons/icon_add_floor.png);
+}
+
+
+//查看地址列表信息===============================
+.add_icon_yellow{
+  width: px2rem(48);
+  height:px2rem(48);
+  margin:px2rem(0) px2rem(22) 0 px2rem(0);
+  display: inline-block;
+  background-image: url(../img/icon_commons/icon_add_address.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_arrow_left{
+  width: px2rem(80);
+  height:px2rem(80);
+  //margin:px2rem(0) px2rem(22) 0 px2rem(0);
+  display: inline-block;
+  background-image: url(../img/icon_commons/icon_arrow_left.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+//中心dialog头部图片=============================
+.wui_dialog_image{
+  width:px2rem(120);
+  height:px2rem(70);
+  position:absolute;
+  left:37%;
+  top:px2rem(-50);
+  z-index:2000;
+  background-image: url(../img/icon_commons/icon_popup.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+//中心toast头部图片=============================
+.wui_toast_image{
+  width:px2rem(120);
+  height:px2rem(70);
+  position:absolute;
+  left:37%;
+  top:px2rem(-50);
+  z-index:2000;
+  background-image: url(../img/icon_commons/icon_popup.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//去支付   图标要换
+.icon_goPay{
+  width: px2rem(200);
+  height: px2rem(100);
+  display: block;
+  background-image: url(../img/icon_commons/btn_order_pay.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -2px;
+  position: absolute;
+  right: 0;
+}
+
+//用餐信息order_dish_info==========================================
+.icon_info_list,.icon_info_peoplenumber,
+.icon_info_tableware,.icon_info_prefer,
+.icon_info_server, .icon_info_discount,
+.icon_info_pay{
+  width:px2rem(48);
+  height:px2rem(48);
+  display: inline-block;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_info_list{
+  background-image: url(../img/icon_commons/icon_info_list.png);
+}
+.icon_info_peoplenumber{
+  background-image: url(../img/icon_commons/icon_info_peoplenumber.png);
+}
+.icon_info_tableware{
+  background-image: url(../img/icon_commons/icon_info_tableware.png);
+}
+.icon_info_prefer{
+  background-image: url(../img/icon_commons/icon_info_prefer.png);
+}
+.icon_info_server{
+  background-image: url(../img/icon_commons/icon_info_server.png);
+}
+.icon_info_discount{
+  background-image: url(../img/icon_commons/icon_info_discount.png);
+}
+.icon_info_pay{
+  background-image: url(../img/icon_commons/icon_info_pay.png);
+}
+
+//用餐信息========================================
+
+.icon_order_name,.icon_order_phone,
+.icon_order_address,.icon_order_time,
+.icon_lock, .icon_edit{
+  display:inline-block;
+  width:px2rem(48);
+  height:px2rem(48);
+  vertical-align: middle;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_order_name{
+  background-image:url(../img/icon_commons/icon_order_name.png);
+}
+.icon_order_phone{
+  background-image:url(../img/icon_commons/icon_order_phone.png);
+}
+.icon_order_address{
+  background-image:url(../img/icon_commons/icon_order_address.png);
+}
+.icon_order_time{
+  background-image:url(../img/icon_commons/icon_order_time.png);
+}
+
+.icon_lock{
+  background-image:url(../img/icon_commons/icon_lock.png);
+}
+.icon_edit{
+  background-image:url(../img/icon_commons/icon_edit.png);
+}
+
+.icon_total{
+  display:inline-block;
+  width:px2rem(80);
+  height:px2rem(40);
+  vertical-align: middle;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url(../img/icon_commons/icon_total.png);
+  transform: translateY(-10%);
+}
+/*order_products============================*/
+//右侧============================
+
+
+//未点餐状态=========================
+
+.icon_menu_hotsale,.icon_menu_recommend {
+  display: block;
+  width: px2rem(90);
+  height: px2rem(90);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_menu_hotsale {
+  background-image: url(../img/icon_commons/icon_menu_hotsale.png);
+}
+.icon_menu_recommend{
+  background-image: url(../img/icon_commons/icon_menu_recommend.png);
+}
+.icon_chilli_1,.icon_chilli_2,.icon_chilli_3 {
+  display: inline-block;
+  width: px2rem(130);
+  height: px2rem(80);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_chilli_1 {
+  background-image: url(../img/icon_commons/icon_chilli_1.png);
+}
+.icon_chilli_2 {
+  background-image: url(../img/icon_commons/icon_chilli_2.png);
+}
+.icon_chilli_3 {
+  background-image: url(../img/icon_commons/icon_chilli_3.png);
+}
+
+
+.icon_menu_minus,.icon_menu_add,
+.icon_menu_add_selected,.icon_menu_plus,
+.icon_menu_add_disabled{
+  display:inline-block;
+  width:px2rem(60);
+  height:px2rem(60);
+  vertical-align: middle;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:95%;
+}
+.icon_menu_minus{
+  display:none;
+  background-image:url(../img/icon_commons/icon_menu_minus.png);
+}
+.icon_menu_add{
+  background-image:url(../img/icon_commons/icon_menu_add_normal.png);
+}
+.icon_menu_add.disabled{
+  background-image:url(../img/icon_commons/icon_menu_add_disabled.png);
+}
+.icon_menu_plus{
+  background-image:url(../img/icon_commons/icon_menu_plus.png);
+}
+.icon_menu_add_selected{
+  background-image:url(../img/icon_commons/icon_menu_add_selected.png);
+}
+
+//购物车图标===================================
+
+.icon_shoppingcart{
+  display:inline-block;
+  width:px2rem(150);
+  height:px2rem(80);
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 px2rem(5);
+  background-image:url(../img/icon_commons/icon_shoppingcart.png);
+}
+
+.icon_list_discount{
+  display:inline-block;
+  width:px2rem(48);
+  height:px2rem(48);
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_list_discount{
+  background-image:url(../img/icon_commons/icon_list_discount.png);
+}
+
+
+
+
+

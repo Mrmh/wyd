@@ -1,0 +1,270 @@
+
+@import "../../base/px2rem";
+@import "../../helpers/variables";
+@import "../../base/font";
+
+.wui_container,.wui_content{
+  padding-bottom: px2rem(150);
+}
+.wui_cell{
+  @include px2px(28);
+}
+.order_myorder{
+  padding-bottom: px2rem(200);
+}
+.ct_text {
+  margin:0;
+}
+
+.order_myorder .no_border_b{
+  border-bottom: none;
+}
+.order_myorder .np_border_t{
+  border-top: none;
+}
+
+.order_view_lines .textLeft{
+  text-align: left;
+}
+.order_view_line {
+  position: relative;
+  padding: px2rem(24) px2rem(50);
+  border-bottom: 1px solid $border_gray;
+  text-align: right;
+  list-style: none;
+  .street_location,.dish_time{
+    float: none;
+  }
+
+}
+.text_left{
+  text-align: left;
+}
+.float_none{
+  float: none !important;
+}
+
+
+.item_text{
+  @include px2px(24);
+}
+
+.item_title{
+  float: left;
+}
+.item_title_num{
+  color:#999;
+}
+.order_view_line_beyond{
+  text-align: left;
+}
+.item_title_beyond{
+  color:$order_font_pink;
+  line-height:1.2;
+  padding: px2rem(18) 0;
+}
+
+.order_main_title {
+  text-align: center;
+  border-bottom: 1px solid $border_gray;
+  padding:px2rem(19) 0;
+}
+.order_view_lines:nth-child(1) {
+  border-top: none;
+}
+.order_view_lines:nth-last-child(1) {
+  border-top: none;
+}
+
+.child_item_title {
+  padding: px2rem(20) px2rem(50);
+  background-color: #f2f2f2;
+  @include px2px(28);
+  color: #666;
+  border-top: 1px solid $border_gray;
+  border-bottom: 1px solid $border_gray;
+}
+.flow_status_item .status_item_text{
+  color:#f2a07c;
+}
+.order_flow_status{
+  padding:px2rem(17) 0;
+  width: px2rem(600);
+  margin: auto;
+}
+.flow_status_item{
+  display: inline-block;
+  width:12.8%;
+}
+.status_item_icon{
+  width:px2rem(80);
+  height:px2rem(120);
+  margin: px2rem(10) auto;
+  background-size: cover;
+}
+.status_item_icon,.status_item_text {
+  text-align: center;
+}
+
+.icon_order_status_line_1,.icon_order_status_line_2,.icon_order_status_line_3 {
+  width:px2rem(60);
+  height: px2rem(6);
+
+  margin-bottom: px2rem(80);
+  margin-left: px2rem(14);
+
+}
+.icon_order_status_line_1{
+  background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+}
+.icon_order_status_line_2{
+  background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+}
+.item_link{
+  display: block;
+  color:#333;
+  text-decoration: none;
+}
+
+.footer_ct_bd{
+  .icon_total{
+    margin-top:px2rem(12);
+  }
+  .money{
+    float:none;
+    margin:px2rem(3.5) 0 0 px2rem(10);
+    @include px2px(40);
+  }
+}
+
+//图标状态
+//ordering
+//cooking
+//delivering
+//finish
+
+//status ordering
+.order_flow_status.ordering{
+  .icon_order_status_ordering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_order.png);
+  }
+  //========================================
+  .icon_order_status_line_1{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+  }
+  //========================================
+  .icon_order_status_cooking{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_cooking_unstar.png);
+  }
+  //========================================
+  .icon_order_status_line_2{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+  }
+  //========================================
+  .icon_order_status_delivering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_delivery_unstar.png);
+  }
+  //========================================
+  .icon_order_status_line_3{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+  }
+  //========================================
+  .icon_order_status_finish{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_finish.png);
+  }
+}
+
+//status cooking
+.order_flow_status.cooking{
+  .icon_order_status_ordering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_order.png);
+  }
+  //========================================
+  .icon_order_status_line_1{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+  }
+  //========================================
+  .icon_order_status_cooking{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_cooking.png);
+  }
+  //========================================
+  .icon_order_status_line_2{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+  }
+  //========================================
+  .icon_order_status_delivering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_delivery_unstar.png);
+  }
+  //========================================
+  .icon_order_status_line_3{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+  }
+  //========================================
+  .icon_order_status_finish{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_finish.png);
+  }
+}
+
+//status delivering
+.order_flow_status.delivering{
+  .icon_order_status_ordering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_order.png);
+  }
+  //========================================
+  .icon_order_status_line_1{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+  }
+  //========================================
+  .icon_order_status_cooking{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_cooking.png);
+  }
+  //========================================
+  .icon_order_status_line_2{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+  }
+  //========================================
+  .icon_order_status_delivering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_delivery.png);
+  }
+  //========================================
+  .icon_order_status_line_3{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen.png);
+  }
+  //========================================
+  .icon_order_status_finish{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_finish.png);
+  }
+}
+
+//status finish
+.order_flow_status.finish{
+  .icon_order_status_ordering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_order.png);
+  }
+  //========================================
+  .icon_order_status_line_1{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+  }
+  //========================================
+  .icon_order_status_cooking{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_cooking.png);
+  }
+  //========================================
+  .icon_order_status_line_2{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+  }
+  //========================================
+  .icon_order_status_delivering{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_delivery.png);
+  }
+  //========================================
+  .icon_order_status_line_3{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_hyphen_highlight.png);
+  }
+  //========================================
+  .icon_order_status_finish{
+    background-image: url(../../../img/icon_member/icon_myinfo_process_finish.png);
+  }
+}
+
+
